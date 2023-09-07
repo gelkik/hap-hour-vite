@@ -1,0 +1,102 @@
+[
+    {
+      "restaurant_name": "The Happiest Hour",
+      "link": "https://www.thehappiesthournyc.com/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "cocktails": "$5",
+        "beers": "$6",
+        "wines by the glass": "$7"
+      }
+    },
+    {
+      "restaurant_name": "Boqueria Soho",
+      "link": "https://www.boquerianyc.com/soho/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "tapas": "20% off",
+        "sangria": "$7",
+        "glasses of wine": "$5"
+      }
+    },
+    {
+      "restaurant_name": "The Dutch",
+      "link": "https://www.thedutchnewyork.com/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "oysters": "$1",
+        "burgers": "$5",
+        "cocktails": "$7"
+      }
+    },
+    {
+      "restaurant_name": "The Commodore",
+      "link": "https://www.thecommodorenewyork.com/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "cocktails": "$5",
+        "beers": "$6",
+        "wines by the glass": "$7"
+      }
+    },
+    {
+      "restaurant_name": "Morimoto Asia",
+      "link": "https://www.morimotoasia.com/new-york-city/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "sushi rolls": "$10",
+        "sake": "$6",
+        "cocktails": "$7"
+      }
+    },
+    {
+      "restaurant_name": "The Grill Room",
+      "link": "https://www.fourseasons.com/newyork/dining/thegrillroom/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "lobster rolls": "$12",
+        "burgers": "$8",
+        "cocktails": "$10"
+      }
+    },
+    {
+      "restaurant_name": "The Modern",
+      "link": "https://www.moma.org/restaurant/the-modern/",
+      "happy_hour_time": "5pm to 7pm daily",
+      "food_offered": {
+        "oysters": "$12",
+        "cocktails": "$7",
+        "wines by the glass": "$8"
+      }
+    },
+    {
+      "restaurant_name": "The NoMad Bar",
+      "link": "https://www.thenomadhotel.com/dining/the-nomad-bar/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "cocktails": "$12",
+        "beers": "$8",
+        "wines by the glass": "$10"
+      }
+    },
+    {
+      "restaurant_name": "The Spotted Pig",
+      "link": "https://www.thespottedpig.com/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "oysters": "$1",
+        "burgers": "$5",
+        "cocktails": "$7"
+      }
+    },
+    {
+      "restaurant_name": "The Waverly Inn",
+      "link": "https://www.thewaverlyinn.com/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "burgers": "$11",
+        "beers": "$6",
+        "cocktails": "$7"
+      }
+    }
+  ]
