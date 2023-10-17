@@ -98,5 +98,115 @@
         "beers": "$6",
         "cocktails": "$7"
       }
-    }
+    },
+    {
+        "restaurantName": "The Dutch",
+        "link": "https://www.thedutchnyc.com/",
+        "happyHourTime": "4pm to 7pm daily",
+        "location": "NoHo",
+        "foodOffered": {
+          "cocktails": "$10",
+          "wine": "$7",
+          "bar snacks": "$5"
+        }
+      },
+      {
+        "restaurantName": "The Grill Room",
+        "link": "https://www.thegrillroomny.com/",
+        "happyHourTime": "5pm to 7pm daily",
+        "location": "Midtown",
+        "foodOffered": {
+          "cocktails": "$12",
+          "wine": "$8",
+          "bar snacks": "$7"
+        }
+      },
+      {
+        "restaurantName": "The Modern",
+        "link": "https://www.themodernnyc.com/",
+        "happyHourTime": "5pm to 7pm daily",
+        "location": "Midtown",
+        "foodOffered": {
+          "cocktails": "$15",
+          "wine": "$10",
+          "bar snacks": "$10"
+        }
+      },
+      {
+        "restaurantName": "Per Se",
+        "link": "https://www.persenyc.com/",
+        "happyHourTime": "5pm to 7pm daily",
+        "location": "Midtown",
+        "foodOffered": {
+          "cocktails": "$20",
+          "wine": "$15",
+          "bar snacks": "$15"
+        }
+      },
+      {
+        "restaurantName": "Eleven Madison Park",
+        "link": "https://www.elevenmadisonpark.com/",
+        "happyHourTime": "5pm to 7pm daily",
+        "location": "Midtown",
+        "foodOffered": {
+          "cocktails": "$25",
+          "wine": "$20",
+          "bar snacks": "$20"
+        }
+      },
+      {
+        "restaurantName": "Marea",
+        "link": "https://www.marea-nyc.com/",
+        "happyHourTime": "5pm to 7pm daily",
+        "location": "Midtown",
+        "foodOffered": {
+          "cocktails": "$30",
+          "wine": "$25",
+          "bar snacks": "$25"
+        }
+      },
+      {
+        "restaurantName": "Casa Dani",
+        "link": "https://www.casadaninyc.com/",
+        "happyHourTime": "4pm to 7pm daily",
+        "location": "Tribeca",
+        "foodOffered": {
+          "cocktails": "$15",
+          "wine": "$10",
+          "bar snacks": "$10"
+        }
+      },
+      {
+        "restaurantName": "Bar Tabac",
+        "link": "https://www.bartabacnyc.com/",
+        "happyHourTime": "4pm to 7pm daily",
+        "location": "Tribeca",
+        "foodOffered": {
+          "cocktails": "$10",
+          "wine": "$7",
+          "bar snacks": "$5"
+        }
+      },
+      {
+        "restaurantName": "The Dutch Kills",
+        "link": "https://www.thedutchkillsnyc.com/",
+        "happyHourTime": "4pm to 7pm daily",
+        "location": "Williamsburg",
+        "foodOffered": {
+          "cocktails": "$10",
+          "wine": "$7",
+          "bar snacks": "$5"
+        }
+      },
+      {
+        "restaurantName": "St Anselm",
+        "link": "https://stanselmsteakhouse.com/",
+        "happyHourTime": "4pm to 7pm daily",
+        "location": "Williamsburg",
+        "foodOffered": {
+          "cocktails": "$15",
+          "wine": "$10",
+          "bar snacks": "$10"
+        }
+      }
   ]
