@@ -1,8 +1,14 @@
 import React from "react";
+import HappyHour from "./HappyHour";
 
-const HappyHours = () => {
+const HappyHours = ({}) => {
     return (
-        <h1>HappyHours</h1>
+        <HappyHour 
+            restName = {'restName'}
+            restLocation= {'restLocation'}
+            restTime= {'restTime'}
+            restLink= {'restLink'}
+        />
     )
 }
 

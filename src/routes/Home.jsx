@@ -1,8 +1,9 @@
 import React from "react";
+import HappyHours from "./HappyHours";
 
 const Home = () => {
     return (
-        <h1>Home</h1>
+        <HappyHours />
     )
 }
 
