@@ -9,6 +9,8 @@ const Header = () => {
                 <div class="flex w-full flex-wrap items-center justify-between px-3">
                     <a class="ml-2 text-xl text-neutral-800 dark:text-neutral-200"
                     href="#"><Link to="/">Home</Link></a>
+                    <a class="ml-2 text-xl text-neutral-800 dark:text-neutral-200"
+                    href="#"><Link to="/happyhours">Happy Hours</Link></a>
                     <div class="ml-5 flex w-[30%] items-center justify-between">
                     <input
                         type="search"
@@ -31,9 +33,9 @@ const Header = () => {
                         </svg>
                     </span>
                     </div>
-                    <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    {/* <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="py-1" role="none">
-                        {user ? <Link to="/happyhours">Happy Hours</Link> : <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">
+                        {'True' ? <Link to="/happyhours">Happy Hours</Link> : <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">
                             <Link to="/signin">Sign In</Link>
                         </a>}
                         <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
@@ -42,7 +44,8 @@ const Header = () => {
                             <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
                         </form>
                         </div>
-                    </div>
+                    </div> */}
+                    
                 </div>
             </nav>
         </>
