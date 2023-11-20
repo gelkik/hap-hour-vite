@@ -1,9 +1,9 @@
 import React from "react";
-import HappyHours from "./HappyHours";
+import HappyHour from "./HappyHour";
 
 const Home = () => {
     return (
-        <HappyHours />
+        <HappyHour />
     )
 }
 
