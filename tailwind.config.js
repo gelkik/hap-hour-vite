@@ -6,9 +6,9 @@ export default {
   ],
   theme: {
     colors: {
-			primary: "#F1F1F0",
-			secondary: "#E68383",
-			tertiary: "#444054",
+			'primary': '#3490dc',
+			'secondary': '#ffed4a',
+			'danger': '#e3342f',
 		},
 		extend: {
 			fontFamily: {
@@ -34,6 +34,10 @@ export default {
 			fontSize: {
 				"7xl": "56px",
 			},
+			backgroundColor: {
+				'indigo-600': '#4F46E5', // Add your color values
+			  },
+		
 		},
 
   },
