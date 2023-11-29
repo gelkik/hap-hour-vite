@@ -10,10 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@aws-amplify/ui-react": "^6.0.1",
+    "@aws-amplify/ui-react": "^6.0.3",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "amazon-cognito-identity-js": "^6.3.7",
-    "aws-amplify": "^6.0.2",
+    "aws-amplify": "^6.0.5",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",

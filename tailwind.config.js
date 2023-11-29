@@ -35,7 +35,12 @@ export default {
 				"7xl": "56px",
 			},
 			backgroundColor: {
-				'indigo-600': '#4F46E5', // Add your color values
+				'indigo-600': '#4F46E5',
+			  },
+			colors: {
+				red: {
+					600: '#DC2626',
+				  },
 			  },
 		
 		},
