@@ -1,15 +1,15 @@
 import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js";
 import UserPool from "./UserPool";
 
-export const authenticate = async ({ Username, Password })=>{
+export const authenticate = async ({ Email, Password })=>{
     return await new Promise((resolve,reject)=>{
         const params = new CognitoUser({
-            Username:Username,
+            Username:Email,
             Pool:UserPool
         });
 
         const authDetails = new AuthenticationDetails({
-            Username:Username,
+            Username:Email,
             Password
         });
 
