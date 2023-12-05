@@ -15,6 +15,8 @@ const Signup = () => {
     const [emailErr, setEmailErr] = useState('');
     const [passwordErr, setPasswordErr] = useState('');
     const [cognitoUser, setCognitoUser] = useState(null);
+    const [confirmationCode, setConfirmationCode] = useState("");
+    const [registrationPending, setRegistrationPending] = useState(false);
 
     const [togglePass, setTogglePass] = useState(false)
 
@@ -61,6 +63,27 @@ const Signup = () => {
         });
     };
 
+    const handleConfirmationCode = (e) => {
+        setConfirmationCode(e.target.value);
+    };
+
+    const submitConfirmationCode = (e) => {
+        e.preventDefault();
+        cognitoUser.confirmRegistration(
+            confirmationCode,
+            true,
+            function (err, result) {
+                if (err) {
+                    console.log(err);
+                    return;
+                }
+                console.log("Confirmation successful:", result);
+                alert('User Added Successfully');
+                Navigate('/favorites');
+            }
+        );
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault()
         setUsernameErr("");
@@ -89,8 +112,9 @@ const Signup = () => {
                     } 
                     else {
                         console.log(data);
-                        alert('User Added Successfully');
-                        Navigate('/favorites');
+                        setRegistrationPending(true);
+                        // alert('User Added Successfully');
+                        // Navigate('/favorites');
                     }
                 });
             }
@@ -101,12 +125,19 @@ const Signup = () => {
 
     return (
         <div className="h-screen flex">
+            {registrationPending ? 
+            <Confirmation
+                submitConfirmationCode = {submitConfirmationCode} 
+                confirmationCode={confirmationCode}
+                handleConfirmationCode={handleConfirmationCode}
+            />
+            : 
             <div className="flex w-1/2 mx-auto justify-center items-center bg-white">
                 <form onSubmit={handleSubmit}>
                     <h1 className="text-gray-800 font-bold text-2xl mb-4">Sign Up</h1>
                     <div className="flex items-center border-2 py-4 px-5 rounded-2xl mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
                         </svg>
                         <input className="pl-2 outline-none border-none" type="text" name="username" 
                             onChange = {(e)=>{
@@ -116,7 +147,7 @@ const Signup = () => {
                             {usernameErr && <p className="text-red-600 mb-2 -mt-2">{usernameErr}</p>}
                     <div className="flex items-center border-2 py-4 px-5 rounded-2xl mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
                         </svg>
                         <input className="pl-2 outline-none border-none" type="text" name="email" 
                             onChange = {(e)=>{
@@ -126,7 +157,7 @@ const Signup = () => {
                             {emailErr && <p className="text-red-600 mb-2 -mt-2">{emailErr}</p>}
                     <div className="flex items-center border-2 py-4 px-5 rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
+                            <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
                         </svg>
                         <input className="pl-2 outline-none border-none" type={togglePass ? "text":"password"} name="password" 
                             onChange = {(e)=>{
@@ -151,11 +182,28 @@ const Signup = () => {
                             }
                     </div>
                     {passwordErr && <p className="text-red-600 mt-1 -mb-1">{passwordErr}</p>}
-                    <button type="submit" className="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2">Sign Up</button>
+                    <button type="submit" className="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white-100 font-semibold mb-2">Sign Up</button>
+                    <a href='/login' className="text-gray-200 font-bold text-1x1 hover:underline">Already have an account?</a>
                 </form>
-            </div>
+            </div>}
         </div>
     )
 }
 
 export default Signup;
+
+const Confirmation = ({ submitConfirmationCode, confirmationCode, handleConfirmationCode }) =>{
+    return (
+        <div className="flex w-1/2 mx-auto justify-center items-center bg-white">
+            <form onSubmit={submitConfirmationCode}>
+                <h1 className="text-gray-800 font-bold text-2xl mb-4">Enter Confirmation Code</h1>
+                <div className="flex items-center border-2 py-4 px-5 rounded-2xl mb-4">
+                    <input className="pl-2 outline-none border-none" type="number" name="confirmationCode" placeholder="Confirmation Code" 
+                        onChange = {handleConfirmationCode}
+                        value = {confirmationCode} id=""/>
+                </div>
+                <button type="submit" className="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white-100 font-semibold mb-2">Submit</button>
+            </form>
+        </div>
+    )
+}

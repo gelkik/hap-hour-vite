@@ -41,6 +41,12 @@ export default {
 				red: {
 					600: '#DC2626',
 				  },
+				gray: {
+					200: '#696969',
+				  },
+				white: {
+					100: '#FFFFFF',
+				  },
 			  },
 		
 		},
