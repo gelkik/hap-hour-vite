@@ -99,10 +99,7 @@ const Signup = () => {
                         Value: email,
                     })
                 );
-                // setCognitoUser(new CognitoUser({
-                //     Username: username,
-                //     Pool: UserPool,
-                // }));
+                
                 // let username = email
                 UserPool.signUp(username, password, attributeList, null, (err, data) => {
                     if (err) {
@@ -112,6 +109,10 @@ const Signup = () => {
                     } 
                     else {
                         console.log(data);
+                        setCognitoUser(new CognitoUser({
+                            Username: username,
+                            Pool: UserPool,
+                        }));
                         setRegistrationPending(true);
                         // alert('User Added Successfully');
                         // Navigate('/favorites');
@@ -198,9 +199,9 @@ const Confirmation = ({ submitConfirmationCode, confirmationCode, handleConfirma
             <form onSubmit={submitConfirmationCode}>
                 <h1 className="text-gray-800 font-bold text-2xl mb-4">Enter Confirmation Code</h1>
                 <div className="flex items-center border-2 py-4 px-5 rounded-2xl mb-4">
-                    <input className="pl-2 outline-none border-none" type="number" name="confirmationCode" placeholder="Confirmation Code" 
+                    <input className="pl-2 outline-none border-none" type="text" name="confirmationCode" placeholder="Confirmation Code" 
                         onChange = {handleConfirmationCode}
-                        value = {confirmationCode} id=""/>
+                        value = {confirmationCode} />
                 </div>
                 <button type="submit" className="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white-100 font-semibold mb-2">Submit</button>
             </form>
