@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import { authenticate } from "../../AWS/authenticate";
 import { useNavigate } from 'react-router-dom';
+import AppContext from '../../context/AppContext';
 
 const Login = () => {
     
@@ -12,6 +13,7 @@ const Login = () => {
     const [passwordErr, setPasswordErr] = useState('');
     const [loginErr,setLoginErr]=useState('');
     const [togglePass, setTogglePass] = useState(false)
+	const { setUser } = useContext(AppContext);
 
     const formInputChange = (formField, value) => {
         if (formField === "username") {
