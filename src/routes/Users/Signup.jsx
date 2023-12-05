@@ -17,7 +17,6 @@ const Signup = () => {
     const [cognitoUser, setCognitoUser] = useState(null);
     const [confirmationCode, setConfirmationCode] = useState("");
     const [registrationPending, setRegistrationPending] = useState(false);
-
     const [togglePass, setTogglePass] = useState(false)
 
     const formInputChange = (formField, value) => {
@@ -100,12 +99,14 @@ const Signup = () => {
                     })
                 );
                 
-                // let username = email
                 UserPool.signUp(username, password, attributeList, null, (err, data) => {
                     if (err) {
                         console.log(err);
                         JSON.stringify(err);
-                        alert("Couldn't sign up");
+                        // alert("Couldn't sign up");
+                        const errorMessage = err.message.split(': ')[1];
+
+                        alert(errorMessage);
                     } 
                     else {
                         console.log(data);
@@ -123,7 +124,6 @@ const Signup = () => {
         err => console.log(err))
         .catch(err => console.log(err));
     }
-
     return (
         <div className="h-screen flex">
             {registrationPending ? 
@@ -134,7 +134,7 @@ const Signup = () => {
             />
             : 
             <div className="flex w-1/2 mx-auto justify-center items-center bg-white">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} id="SignUp-Form">
                     <h1 className="text-gray-800 font-bold text-2xl mb-4">Sign Up</h1>
                     <div className="flex items-center border-2 py-4 px-5 rounded-2xl mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -143,7 +143,7 @@ const Signup = () => {
                         <input className="pl-2 outline-none border-none" type="text" name="username" 
                             onChange = {(e)=>{
                                 formInputChange(e.target.name,e.target.value)}}
-                            value = {username} id="" placeholder="Username" />
+                            value = {username} id="username-signup" placeholder="Username" />
                     </div>
                             {usernameErr && <p className="text-red-600 mb-2 -mt-2">{usernameErr}</p>}
                     <div className="flex items-center border-2 py-4 px-5 rounded-2xl mb-4">
@@ -153,38 +153,35 @@ const Signup = () => {
                         <input className="pl-2 outline-none border-none" type="text" name="email" 
                             onChange = {(e)=>{
                                 formInputChange(e.target.name,e.target.value)}}
-                            value = {email} id="" placeholder="Email" />
+                            value = {email} id="email-signup" placeholder="Email" />
                     </div>
                             {emailErr && <p className="text-red-600 mb-2 -mt-2">{emailErr}</p>}
                     <div className="flex items-center border-2 py-4 px-5 rounded-2xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
-                        </svg>
+                        {togglePass ? 
+                                    <img
+                                        id="password_hide"
+                                        src="src/pass_icon/hide.png"
+                                        alt="password_hide"
+                                        className="h-6 w-6 mt-2 transform -translate-y-1 cursor-pointer"
+                                        onClick={()=>{setTogglePass(false)}}
+                                    />
+                                    :
+                                    <img
+                                        id="password_view"
+                                        src="src/pass_icon/view.png"
+                                        alt="password_view"
+                                        className="h-6 w-6 mt-2 transform -translate-y-1 cursor-pointer"
+                                        onClick={()=>{setTogglePass(true)}}
+                                    />
+                                }
                         <input className="pl-2 outline-none border-none" type={togglePass ? "text":"password"} name="password" 
                             onChange = {(e)=>{
                                 formInputChange(e.target.name,e.target.value)}}
-                            value = {password} id="" placeholder="Password" />
-                            {togglePass ? 
-                                <img
-                                    id="password_hide"
-                                    src="src/pass_icon/hide.png"
-                                    alt="password_hide"
-                                    className="h-6 w-6 transform -translate-y-1 cursor-pointer"
-                                    onClick={()=>{setTogglePass(false)}}
-                                />
-                                :
-                                <img
-                                    id="password_view"
-                                    src="src/pass_icon/view.png"
-                                    alt="password_view"
-                                    className="h-6 w-6 transform -translate-y-1 cursor-pointer"
-                                    onClick={()=>{setTogglePass(true)}}
-                                />
-                            }
+                            value = {password} id="password-signup" placeholder="Password" />
                     </div>
                     {passwordErr && <p className="text-red-600 mt-1 -mb-1">{passwordErr}</p>}
                     <button type="submit" className="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white-100 font-semibold mb-2">Sign Up</button>
-                    <a href='/login' className="text-gray-200 font-bold text-1x1 hover:underline">Already have an account?</a>
+                    <span href='/login' className="text-gray-200 font-bold text-1x1 hover:text-blue-500 cursor-pointer">Already have an account?</span>
                 </form>
             </div>}
         </div>
@@ -196,7 +193,7 @@ export default Signup;
 const Confirmation = ({ submitConfirmationCode, confirmationCode, handleConfirmationCode }) =>{
     return (
         <div className="flex w-1/2 mx-auto justify-center items-center bg-white">
-            <form onSubmit={submitConfirmationCode}>
+            <form onSubmit={submitConfirmationCode} id="Confirmation-Code">
                 <h1 className="text-gray-800 font-bold text-2xl mb-4">Enter Confirmation Code</h1>
                 <div className="flex items-center border-2 py-4 px-5 rounded-2xl mb-4">
                     <input className="pl-2 outline-none border-none" type="text" name="confirmationCode" placeholder="Confirmation Code" 
