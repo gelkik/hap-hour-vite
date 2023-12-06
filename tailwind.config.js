@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'className',
   theme: {
     colors: {
 			'primary': '#3490dc',
@@ -46,6 +47,16 @@ export default {
 				  },
 				white: {
 					100: '#FFFFFF',
+				  },
+				blue: {
+					200: '#7CB9E8',
+				  },
+				blue: {
+					200: '#7CB9E8',
+					600: '#2563eb',
+				  },
+				neutral: {
+					800: '#262626',
 				  },
 			  },
 		

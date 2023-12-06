@@ -18,14 +18,13 @@ function App() {
     // const user = UserPool.getCurrentUser();
   const [user, setUser] = useState(null);
   const [accessToken, setAccessToken] = useState(null);
-
   
   return (
     <>
        <AppContext.Provider
           value={{ user, setUser, accessToken, setAccessToken }}>
         <Router>
-          <Header user = {user}/>
+          <Header />
             <Routes>
               <Route name='home' path = '/' element = {<Home />}/>
               {/* <Route name='happyhours' path = '/happyhours' element = {<HappyHours />}/> */}

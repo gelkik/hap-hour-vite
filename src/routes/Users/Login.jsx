@@ -13,7 +13,7 @@ const Login = () => {
     const [passwordErr, setPasswordErr] = useState('');
     const [loginErr,setLoginErr]=useState('');
     const [togglePass, setTogglePass] = useState(false)
-	const { setUser } = useContext(AppContext);
+	const { setUser,setAccessToken } = useContext(AppContext);
 
     const formInputChange = (formField, value) => {
         if (formField === "username") {
@@ -57,21 +57,25 @@ const Login = () => {
         validation()
           .then((res) => {
             if (res.username === '' && res.password === '') {
-                authenticate(username,password)
-                .then((data)=>{
-                    setLoginErr('');
-                    Navigate('/favorites');
-                },
-                (err)=>{
-                    console.log(err);
-                    setLoginErr(err.message)
-                })
-                .catch(err=>console.log(err))
-            }
-          }, 
-          err => console.log(err))
-          .catch(err => console.log(err));
-      }
+                authenticate({ Username: username, Password: password })
+                    .then((data)=>{
+                        console.log(data);
+                        
+                        setLoginErr('');
+                        setUser(username)
+                        setAccessToken(data.idToken)
+                        Navigate('/favorites');
+                        return;
+                    })
+                    .catch(err=>{
+                        console.log(err);
+                        setLoginErr(err.message || 'An error occurred during login.');
+                    });
+                }
+            }, 
+            err => console.log(err))
+            .catch(err => console.log(err));
+    }
     
 
     return (
@@ -88,6 +92,7 @@ const Login = () => {
                         value={username}
                         id="username-login" placeholder="Username" />
                 </div>
+                {usernameErr && <p className="text-red-600 mb-2 -mt-2">{usernameErr}</p>}
                 <div className="flex items-center border-2 py-4 px-5 rounded-2xl">
                     {togglePass ? 
                                     <img
@@ -111,8 +116,10 @@ const Login = () => {
                         value={password}
                         id="password-login" placeholder="Password" />
                 </div>
-                <button type="submit" className="block w-full text-white-100 bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2">Login</button>
-                <span className="text-sm ml-2 hover:text-blue-500 cursor-pointer font-bold text-gray-200">Forgot Password?</span>
+                {passwordErr && <p className="text-red-600 mt-1 -mb-1">{passwordErr}</p>}
+                <span className="justify-between text-sm hover:text-blue-500 cursor-pointer font-bold text-gray-200">Forgot Password?</span>
+                <button type="submit" className="block w-full text-white-100 bg-indigo-600 mt-2 py-2 rounded-2xl text-white font-semibold mb-2">Login</button>
+                {loginErr && <p className="text-red-600 mt-1 -mb-1">{loginErr}</p>}
                 </form>
             </div>
         </div>

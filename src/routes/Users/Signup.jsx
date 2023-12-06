@@ -1,23 +1,31 @@
-import React, { useState } from 'react'
+import React, { useState,useContext,useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CognitoUserAttribute, CognitoUser } from 'amazon-cognito-identity-js';
-
+import AppContext from '../../context/AppContext'
 import UserPool from '../../AWS/UserPool';
 
 const Signup = () => {
 
-    const Navigate = useNavigate();
-
+    const navigate = useNavigate();
+    const { user, setUser } = useContext(AppContext);
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [usernameErr, setUsernameErr] = useState('');
     const [emailErr, setEmailErr] = useState('');
+    const [signupErr, setSignupErr] = useState('');
     const [passwordErr, setPasswordErr] = useState('');
     const [cognitoUser, setCognitoUser] = useState(null);
     const [confirmationCode, setConfirmationCode] = useState("");
     const [registrationPending, setRegistrationPending] = useState(false);
     const [togglePass, setTogglePass] = useState(false)
+
+    useEffect(() => {
+        // If user is already logged in, redirect to the home page
+        if (user) {
+            navigate('/favorites'); // or the desired route
+        }
+    }, [user, navigate]);
 
     const formInputChange = (formField, value) => {
         if (formField === "username") {
@@ -77,8 +85,8 @@ const Signup = () => {
                     return;
                 }
                 console.log("Confirmation successful:", result);
-                alert('User Added Successfully');
-                Navigate('/favorites');
+                // alert('User Added Successfully');
+                navigate('/favorites');
             }
         );
     };
@@ -106,7 +114,7 @@ const Signup = () => {
                         // alert("Couldn't sign up");
                         const errorMessage = err.message.split(': ')[1];
 
-                        alert(errorMessage);
+                        setSignupErr(errorMessage);
                     } 
                     else {
                         console.log(data);
@@ -114,6 +122,7 @@ const Signup = () => {
                             Username: username,
                             Pool: UserPool,
                         }));
+                        setUser({username: username})
                         setRegistrationPending(true);
                         // alert('User Added Successfully');
                         // Navigate('/favorites');
@@ -136,6 +145,7 @@ const Signup = () => {
             <div className="flex w-1/2 mx-auto justify-center items-center bg-white">
                 <form onSubmit={handleSubmit} id="SignUp-Form">
                     <h1 className="text-gray-800 font-bold text-2xl mb-4">Sign Up</h1>
+                    {signupErr && <p className="text-red-600 mt-1 -mb-1">{signupErr}</p>}
                     <div className="flex items-center border-2 py-4 px-5 rounded-2xl mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
@@ -145,7 +155,7 @@ const Signup = () => {
                                 formInputChange(e.target.name,e.target.value)}}
                             value = {username} id="username-signup" placeholder="Username" />
                     </div>
-                            {usernameErr && <p className="text-red-600 mb-2 -mt-2">{usernameErr}</p>}
+                    {usernameErr && <p className="text-red-600 mb-2 -mt-2">{usernameErr}</p>}
                     <div className="flex items-center border-2 py-4 px-5 rounded-2xl mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
@@ -155,7 +165,7 @@ const Signup = () => {
                                 formInputChange(e.target.name,e.target.value)}}
                             value = {email} id="email-signup" placeholder="Email" />
                     </div>
-                            {emailErr && <p className="text-red-600 mb-2 -mt-2">{emailErr}</p>}
+                    {emailErr && <p className="text-red-600 mb-2 -mt-2">{emailErr}</p>}
                     <div className="flex items-center border-2 py-4 px-5 rounded-2xl">
                         {togglePass ? 
                                     <img
@@ -181,7 +191,7 @@ const Signup = () => {
                     </div>
                     {passwordErr && <p className="text-red-600 mt-1 -mb-1">{passwordErr}</p>}
                     <button type="submit" className="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white-100 font-semibold mb-2">Sign Up</button>
-                    <span href='/login' className="text-gray-200 font-bold text-1x1 hover:text-blue-500 cursor-pointer">Already have an account?</span>
+                    <a href='/login' className="text-blue-600 font-bold text-1x1  hover:underline cursor-pointer">Already have an account?</a>
                 </form>
             </div>}
         </div>

@@ -4,7 +4,7 @@ import API_BASE_URL from '../AWS/config'
 
 const HappyHour = ({restName,restLocation,restTime,restLink}) => {
 
-    const [isClick, setClick] = useState(false);
+    const [isclick, setClick] = useState(false);
 
 
     return (
@@ -37,7 +37,7 @@ const HappyHour = ({restName,restLocation,restTime,restLink}) => {
                         <a className="no-underline text-grey-darker hover:text-red-dark" href="#">
                             <span className="hidden">Like</span>
                             <div className="App">
-                                <Heart isClick={isClick} onClick={() => setClick(!isClick)} />
+                                <Heart isclick={isclick} onClick={() => setClick(!isclick)} />
                             </div>
                         </a>
                     </footer>

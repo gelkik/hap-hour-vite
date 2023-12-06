@@ -1,22 +1,34 @@
 import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js";
 import UserPool from "./UserPool";
+import { useContext } from "react";
 
 export const authenticate = async ({ Username, Password })=>{
-    return await new Promise((resolve,reject)=>{
-        const params = new CognitoUser({
+
+    console.log("Username:", Username);
+    console.log("UserPool:", UserPool);
+    return new Promise((resolve,reject)=>{
+        const cognitoUser = new CognitoUser({
             Username:Username,
             Pool:UserPool
         });
 
         const authDetails = new AuthenticationDetails({
-            Username:Username,
-            Password
+            Username: Username,
+            Password: Password
         });
-
-        params.authenticateUser(authDetails,{
-            onSuccess:(result)=>{
+        
+        cognitoUser.authenticateUser(authDetails,{
+            onSuccess:(session)=>{
                 console.log("login successful");
-                resolve(result);
+                // resolve(result);
+                resolve({
+                    username: cognitoUser.getUsername(),
+                    idToken: session.getIdToken().getJwtToken(),
+                    accessToken: session.getAccessToken().getJwtToken(),
+                    refreshToken: session.getRefreshToken().getToken(),
+                });
+                // console.log(session)
+
             },
             onFailure:(err)=>{
                 console.log("login failed",err);
@@ -28,7 +40,12 @@ export const authenticate = async ({ Username, Password })=>{
 
 
 export const logout = () => {
-    const params = UserPool.getCurrentUser();
-    params.signOut();
-    window.location.href = '/';
+    const cognitoUser = UserPool.getCurrentUser();
+    if (cognitoUser){
+        cognitoUser.signOut();
+        window.location.href = '/';
+    }
+    else{
+        console.log('Logout Error.')
+    }
 };
