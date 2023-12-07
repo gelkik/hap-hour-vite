@@ -16,8 +16,12 @@ const Header = () => {
         <>
             <nav className="relative flex w-full flex-wrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4">
                 <div className="flex w-full flex-wrap items-center justify-between px-3">
-                    <a className="ml-2 text-xl text-neutral-800 dark:text-neutral-200"
-                    href="#"><Link to="/">Home</Link></a>
+                    <a className="ml-2 text-xl text-neutral-800 dark:text-neutral-200"><Link to="/">Home</Link></a>
+                    {user ? 
+                    <a className="ml-2 text-xl text-neutral-800 dark:text-neutral-200"><Link to="/favorites">Favorites</Link></a> 
+                    :
+                    <></>
+                    }
                     <div className="ml-5 flex w-[30%] items-center justify-between">
                         <input
                             type="search"
@@ -42,11 +46,10 @@ const Header = () => {
                     </div>
                     {user ? 
                     <div>
-                        <a className="ml-2 text-xl text-neutral-800 dark:text-neutral-200" href="/favorites">Favorites</a> 
-                        <a className="ml-4 text-xl text-neutral-800 dark:text-neutral-200" onClick={handleLogout} href="/login">Logout</a> 
+                        <a className="ml-4 text-xl text-neutral-800 dark:text-neutral-200" onClick={handleLogout}><Link to="/logout">Logout</Link></a> 
                     </div>
                     : 
-                    <a className="ml-2 text-xl text-neutral-800 dark:text-neutral-200" href="/login">Login</a>}
+                    <a className="ml-2 text-xl text-neutral-800 dark:text-neutral-200"><Link to="/login">Login</Link></a>}
                 </div>
             </nav>
         </>

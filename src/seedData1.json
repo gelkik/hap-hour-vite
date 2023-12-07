@@ -1,0 +1,212 @@
+[
+    {
+      "restaurant_name": "The Happiest Hour",
+      "link": "https://www.thehappiesthournyc.com/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "cocktails": "$5",
+        "beers": "$6",
+        "wines by the glass": "$7"
+      }
+    },
+    {
+      "restaurant_name": "Boqueria Soho",
+      "link": "https://www.boquerianyc.com/soho/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "tapas": "20% off",
+        "sangria": "$7",
+        "glasses of wine": "$5"
+      }
+    },
+    {
+      "restaurant_name": "The Dutch",
+      "link": "https://www.thedutchnewyork.com/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "oysters": "$1",
+        "burgers": "$5",
+        "cocktails": "$7"
+      }
+    },
+    {
+      "restaurant_name": "The Commodore",
+      "link": "https://www.thecommodorenewyork.com/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "cocktails": "$5",
+        "beers": "$6",
+        "wines by the glass": "$7"
+      }
+    },
+    {
+      "restaurant_name": "Morimoto Asia",
+      "link": "https://www.morimotoasia.com/new-york-city/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "sushi rolls": "$10",
+        "sake": "$6",
+        "cocktails": "$7"
+      }
+    },
+    {
+      "restaurant_name": "The Grill Room",
+      "link": "https://www.fourseasons.com/newyork/dining/thegrillroom/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "lobster rolls": "$12",
+        "burgers": "$8",
+        "cocktails": "$10"
+      }
+    },
+    {
+      "restaurant_name": "The Modern",
+      "link": "https://www.moma.org/restaurant/the-modern/",
+      "happy_hour_time": "5pm to 7pm daily",
+      "food_offered": {
+        "oysters": "$12",
+        "cocktails": "$7",
+        "wines by the glass": "$8"
+      }
+    },
+    {
+      "restaurant_name": "The NoMad Bar",
+      "link": "https://www.thenomadhotel.com/dining/the-nomad-bar/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "cocktails": "$12",
+        "beers": "$8",
+        "wines by the glass": "$10"
+      }
+    },
+    {
+      "restaurant_name": "The Spotted Pig",
+      "link": "https://www.thespottedpig.com/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "oysters": "$1",
+        "burgers": "$5",
+        "cocktails": "$7"
+      }
+    },
+    {
+      "restaurant_name": "The Waverly Inn",
+      "link": "https://www.thewaverlyinn.com/",
+      "happy_hour_time": "4pm to 7pm daily",
+      "food_offered": {
+        "burgers": "$11",
+        "beers": "$6",
+        "cocktails": "$7"
+      }
+    },
+    {
+        "restaurantName": "The Dutch",
+        "link": "https://www.thedutchnyc.com/",
+        "happyHourTime": "4pm to 7pm daily",
+        "location": "NoHo",
+        "foodOffered": {
+          "cocktails": "$10",
+          "wine": "$7",
+          "bar snacks": "$5"
+        }
+      },
+      {
+        "restaurantName": "The Grill Room",
+        "link": "https://www.thegrillroomny.com/",
+        "happyHourTime": "5pm to 7pm daily",
+        "location": "Midtown",
+        "foodOffered": {
+          "cocktails": "$12",
+          "wine": "$8",
+          "bar snacks": "$7"
+        }
+      },
+      {
+        "restaurantName": "The Modern",
+        "link": "https://www.themodernnyc.com/",
+        "happyHourTime": "5pm to 7pm daily",
+        "location": "Midtown",
+        "foodOffered": {
+          "cocktails": "$15",
+          "wine": "$10",
+          "bar snacks": "$10"
+        }
+      },
+      {
+        "restaurantName": "Per Se",
+        "link": "https://www.persenyc.com/",
+        "happyHourTime": "5pm to 7pm daily",
+        "location": "Midtown",
+        "foodOffered": {
+          "cocktails": "$20",
+          "wine": "$15",
+          "bar snacks": "$15"
+        }
+      },
+      {
+        "restaurantName": "Eleven Madison Park",
+        "link": "https://www.elevenmadisonpark.com/",
+        "happyHourTime": "5pm to 7pm daily",
+        "location": "Midtown",
+        "foodOffered": {
+          "cocktails": "$25",
+          "wine": "$20",
+          "bar snacks": "$20"
+        }
+      },
+      {
+        "restaurantName": "Marea",
+        "link": "https://www.marea-nyc.com/",
+        "happyHourTime": "5pm to 7pm daily",
+        "location": "Midtown",
+        "foodOffered": {
+          "cocktails": "$30",
+          "wine": "$25",
+          "bar snacks": "$25"
+        }
+      },
+      {
+        "restaurantName": "Casa Dani",
+        "link": "https://www.casadaninyc.com/",
+        "happyHourTime": "4pm to 7pm daily",
+        "location": "Tribeca",
+        "foodOffered": {
+          "cocktails": "$15",
+          "wine": "$10",
+          "bar snacks": "$10"
+        }
+      },
+      {
+        "restaurantName": "Bar Tabac",
+        "link": "https://www.bartabacnyc.com/",
+        "happyHourTime": "4pm to 7pm daily",
+        "location": "Tribeca",
+        "foodOffered": {
+          "cocktails": "$10",
+          "wine": "$7",
+          "bar snacks": "$5"
+        }
+      },
+      {
+        "restaurantName": "The Dutch Kills",
+        "link": "https://www.thedutchkillsnyc.com/",
+        "happyHourTime": "4pm to 7pm daily",
+        "location": "Williamsburg",
+        "foodOffered": {
+          "cocktails": "$10",
+          "wine": "$7",
+          "bar snacks": "$5"
+        }
+      },
+      {
+        "restaurantName": "St Anselm",
+        "link": "https://stanselmsteakhouse.com/",
+        "happyHourTime": "4pm to 7pm daily",
+        "location": "Williamsburg",
+        "foodOffered": {
+          "cocktails": "$15",
+          "wine": "$10",
+          "bar snacks": "$10"
+        }
+      }
+  ]

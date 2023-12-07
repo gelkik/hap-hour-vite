@@ -1,212 +1,727 @@
 [
     {
-      "restaurant_name": "The Happiest Hour",
-      "link": "https://www.thehappiesthournyc.com/",
-      "happy_hour_time": "4pm to 7pm daily",
+      "restaurant_name": "Sweet & Vicious",
+      "link": "http://www.sweetandvicious.com/",
+      "happy_hour_time": "5:00 PM - 7:00 PM",
       "food_offered": {
-        "cocktails": "$5",
-        "beers": "$6",
-        "wines by the glass": "$7"
-      }
+        "sliders": "$8",
+        "wings": "$10",
+        "fries": "$6"
+      },
+      "address": "5 Spring St, New York, NY 10013",
+      "food_type": "American Gastropub"
     },
     {
-      "restaurant_name": "Boqueria Soho",
-      "link": "https://www.boquerianyc.com/soho/",
-      "happy_hour_time": "4pm to 7pm daily",
+      "restaurant_name": "Tavern 29",
+      "link": "http://tavern29.com/",
+      "happy_hour_time": "4:00 PM - 6:00 PM",
       "food_offered": {
-        "tapas": "20% off",
-        "sangria": "$7",
-        "glasses of wine": "$5"
-      }
+        "mini burgers": "$5",
+        "pretzels": "$4",
+        "deviled eggs": "$3 each"
+      },
+      "address": "47 E 29th St, New York, NY 10016",
+      "food_type": "American Comfort Food"
     },
     {
-      "restaurant_name": "The Dutch",
-      "link": "https://www.thedutchnewyork.com/",
-      "happy_hour_time": "4pm to 7pm daily",
+      "restaurant_name": "Cask Bar & Kitchen",
+      "link": "http://casknyc.com/",
+      "happy_hour_time": "3:00 PM - 6:00 PM",
       "food_offered": {
-        "oysters": "$1",
-        "burgers": "$5",
-        "cocktails": "$7"
-      }
+        "beer-battered onion rings": "$9",
+        "cheese curds": "$8",
+        "pulled pork sliders": "$7"
+      },
+      "address": "167 E 33rd St, New York, NY 10016",
+      "food_type": "Pub Fare"
     },
     {
-      "restaurant_name": "The Commodore",
-      "link": "https://www.thecommodorenewyork.com/",
-      "happy_hour_time": "4pm to 7pm daily",
+      "restaurant_name": "Employees Only",
+      "link": "https://employeesonlynyc.com/",
+      "happy_hour_time": "4:00 PM - 6:00 PM",
       "food_offered": {
-        "cocktails": "$5",
-        "beers": "$6",
-        "wines by the glass": "$7"
-      }
+        "oysters": "$1 each",
+        "deviled eggs": "$2 each",
+        "other snacks": "$5-8 each"
+      },
+      "address": "510 Hudson St, New York, NY 10014",
+      "food_type": "American Gastropub"
     },
     {
-      "restaurant_name": "Morimoto Asia",
-      "link": "https://www.morimotoasia.com/new-york-city/",
-      "happy_hour_time": "4pm to 7pm daily",
+      "restaurant_name": "Black Tap Craft Burgers & Beer",
+      "link": "https://blacktapnyc.com/",
+      "happy_hour_time": "4:00 PM - 6:00 PM",
       "food_offered": {
-        "sushi rolls": "$10",
-        "sake": "$6",
-        "cocktails": "$7"
-      }
+        "burgers": "$12-15",
+        "fries": "$6",
+        "wings": "$10"
+      },
+      "address": "525 5th Ave, New York, NY 10017",
+      "food_type": "American"
     },
     {
-      "restaurant_name": "The Grill Room",
-      "link": "https://www.fourseasons.com/newyork/dining/thegrillroom/",
-      "happy_hour_time": "4pm to 7pm daily",
-      "food_offered": {
-        "lobster rolls": "$12",
-        "burgers": "$8",
-        "cocktails": "$10"
-      }
-    },
-    {
-      "restaurant_name": "The Modern",
-      "link": "https://www.moma.org/restaurant/the-modern/",
-      "happy_hour_time": "5pm to 7pm daily",
-      "food_offered": {
-        "oysters": "$12",
-        "cocktails": "$7",
-        "wines by the glass": "$8"
-      }
-    },
-    {
-      "restaurant_name": "The NoMad Bar",
-      "link": "https://www.thenomadhotel.com/dining/the-nomad-bar/",
-      "happy_hour_time": "4pm to 7pm daily",
-      "food_offered": {
-        "cocktails": "$12",
-        "beers": "$8",
-        "wines by the glass": "$10"
-      }
-    },
-    {
-      "restaurant_name": "The Spotted Pig",
-      "link": "https://www.thespottedpig.com/",
-      "happy_hour_time": "4pm to 7pm daily",
-      "food_offered": {
-        "oysters": "$1",
-        "burgers": "$5",
-        "cocktails": "$7"
-      }
-    },
-    {
-      "restaurant_name": "The Waverly Inn",
-      "link": "https://www.thewaverlyinn.com/",
-      "happy_hour_time": "4pm to 7pm daily",
-      "food_offered": {
-        "burgers": "$11",
-        "beers": "$6",
-        "cocktails": "$7"
-      }
-    },
-    {
-        "restaurantName": "The Dutch",
+        "restaurant_name": "The Happiest Hour",
+        "link": "https://www.thehappiesthournyc.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "cocktails": "$5",
+          "beers": "$6",
+          "wines by the glass": "$7"
+        },
+        "address": "127 1st Ave, New York, NY 10003",
+        "food_type": "American"
+      },
+      {
+        "restaurant_name": "Boqueria Soho",
+        "link": "https://www.boquerianyc.com/soho/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "tapas": "20% off",
+          "sangria": "$7",
+          "glasses of wine": "$5"
+        },
+        "address": "190 Prince St, New York, NY 10012",
+        "food_type": "Spanish"
+      },
+      {
+        "restaurant_name": "La Esquina",
+        "link": "https://laesquinanyc.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "tacos": "$3 each",
+          "guacamole": "$8",
+          "other Mexican fare": "$5-10 each"
+        },
+        "address": "114 Kenmare St, New York, NY 10012",
+        "food_type": "Mexican"
+      },
+      {
+        "restaurant_name": "The Commodore",
+        "link": "https://www.thecommodorenewyork.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "cocktails": "$5",
+          "beers": "$6",
+          "wines by the glass": "$7"
+        },
+        "address": "308 W 49th St, New York, NY 10019",
+        "food_type": "American Pub Fare"
+      },
+      {
+        "restaurant_name": "Morimoto Asia",
+        "link": "https://www.morimotoasia.com/new-york-city/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "sushi rolls": "$10-15",
+          "sake": "$6",
+          "cocktails": "$7"
+        },
+        "address": "88 5th Ave, New York, NY 10011",
+        "food_type": "Pan-Asian"
+      },
+      {
+        "restaurant_name": "The Modern",
+        "link": "https://www.moma.org/restaurant/the-modern/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "oysters": "$12",
+          "cocktails": "$7",
+          "wines by the glass": "$8"
+        },
+        "address": "9 W 53rd St, New York, NY 10019",
+        "food_type": "Modern American"
+      },
+      {
+        "restaurant_name": "The NoMad Bar",
+        "link": "https://www.thenomadhotel.com/dining/the-nomad-bar/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "cocktails": "$12",
+          "beers": "$8",
+          "wines by the glass": "$10"
+        },
+        "address": "1170 Broadway, New York, NY 10001",
+        "food_type": "American Gastropub"
+      },
+      {
+        "restaurant_name": "The Spotted Pig",
+        "link": "https://www.thespottedpig.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "oysters": "$1",
+          "burgers": "$15",
+          "cocktails": "$7"
+        },
+        "address": "314 W 11th St, New York, NY 10014",
+        "food_type": "Italian Gastropub"
+      },
+      {
+        "restaurant_name": "The Waverly Inn",
+        "link": "https://www.thewaverlyinn.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "burgers": "$11",
+          "beers": "$6",
+          "cocktails": "$7"
+        },
+        "address": "16 Bank St, New York, NY 10014",
+        "food_type": "American Pub Fare"
+      },
+      {
+        "restaurant_name": "The Dutch",
         "link": "https://www.thedutchnyc.com/",
-        "happyHourTime": "4pm to 7pm daily",
-        "location": "NoHo",
-        "foodOffered": {
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
           "cocktails": "$10",
           "wine": "$7",
           "bar snacks": "$5"
-        }
+        },
+        "address": "131 E 27th St, New York, NY 10016",
+        "food_type": "American Gastropub"
       },
       {
-        "restaurantName": "The Grill Room",
+        "restaurant_name": "The Grill Room",
         "link": "https://www.thegrillroomny.com/",
-        "happyHourTime": "5pm to 7pm daily",
-        "location": "Midtown",
-        "foodOffered": {
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
           "cocktails": "$12",
           "wine": "$8",
           "bar snacks": "$7"
-        }
+        },
+        "address": "40 E 49th St, New York, NY 10017",
+        "food_type": "American Steakhouse"
       },
       {
-        "restaurantName": "The Modern",
-        "link": "https://www.themodernnyc.com/",
-        "happyHourTime": "5pm to 7pm daily",
-        "location": "Midtown",
-        "foodOffered": {
-          "cocktails": "$15",
-          "wine": "$10",
-          "bar snacks": "$10"
-        }
-      },
-      {
-        "restaurantName": "Per Se",
-        "link": "https://www.persenyc.com/",
-        "happyHourTime": "5pm to 7pm daily",
-        "location": "Midtown",
-        "foodOffered": {
-          "cocktails": "$20",
-          "wine": "$15",
-          "bar snacks": "$15"
-        }
-      },
-      {
-        "restaurantName": "Eleven Madison Park",
-        "link": "https://www.elevenmadisonpark.com/",
-        "happyHourTime": "5pm to 7pm daily",
-        "location": "Midtown",
-        "foodOffered": {
-          "cocktails": "$25",
-          "wine": "$20",
-          "bar snacks": "$20"
-        }
-      },
-      {
-        "restaurantName": "Marea",
-        "link": "https://www.marea-nyc.com/",
-        "happyHourTime": "5pm to 7pm daily",
-        "location": "Midtown",
-        "foodOffered": {
-          "cocktails": "$30",
-          "wine": "$25",
-          "bar snacks": "$25"
-        }
-      },
-      {
-        "restaurantName": "Casa Dani",
+        "restaurant_name": "Casa Dani",
         "link": "https://www.casadaninyc.com/",
-        "happyHourTime": "4pm to 7pm daily",
-        "location": "Tribeca",
-        "foodOffered": {
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
           "cocktails": "$15",
           "wine": "$10",
           "bar snacks": "$10"
-        }
+        },
+        "address": "124 E 46th St, New York, NY 10017",
+        "food_type": "Spanish Tapas"
       },
       {
-        "restaurantName": "Bar Tabac",
+        "restaurant_name": "Bar Tabac",
         "link": "https://www.bartabacnyc.com/",
-        "happyHourTime": "4pm to 7pm daily",
-        "location": "Tribeca",
-        "foodOffered": {
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
           "cocktails": "$10",
           "wine": "$7",
           "bar snacks": "$5"
-        }
+        },
+        "address": "45 E 58th St, New York, NY 10022",
+        "food_type": "French Bistro"
       },
       {
-        "restaurantName": "The Dutch Kills",
+        "restaurant_name": "The Dutch Kills",
         "link": "https://www.thedutchkillsnyc.com/",
-        "happyHourTime": "4pm to 7pm daily",
-        "location": "Williamsburg",
-        "foodOffered": {
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
           "cocktails": "$10",
           "wine": "$7",
           "bar snacks": "$5"
-        }
+        },
+        "address": "275 Lorimer St, Brooklyn, NY 11206",
+        "food_type": "American Gastropub"
       },
       {
-        "restaurantName": "St Anselm",
+        "restaurant_name": "St Anselm",
         "link": "https://stanselmsteakhouse.com/",
-        "happyHourTime": "4pm to 7pm daily",
-        "location": "Williamsburg",
-        "foodOffered": {
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
           "cocktails": "$15",
           "wine": "$10",
           "bar snacks": "$10"
-        }
+        },
+        "address": "355 Metropolitan Ave, Brooklyn, NY 11211",
+        "food_type": "American Steakhouse"
+      },
+      {
+        "restaurant_name": "Casa Mono",
+        "link": "https://casamononyc.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "tapas": "20% off",
+          "wine by the glass": "$7",
+          "caña beers": "$5"
+        },
+        "address": "51 Irving Pl, New York, NY 10003",
+        "food_type": "Spanish Tapas"
+      },
+      {
+        "restaurant_name": "Estela",
+        "link": "https://estelanyc.com/",
+        "happy_hour_time": "5:30pm to 7pm daily",
+        "food_offered": {
+          "snacks": "$7-12",
+          "glasses of wine": "$8",
+          "draft beers": "$6"
+        },
+        "address": "47 E Houston St, New York, NY 10012",
+        "food_type": "Modern American"
+      },
+      {
+        "restaurant_name": "Trafi",
+        "link": "https://www.trafinyc.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "mezcal cocktails": "$12",
+          "tequila cocktails": "$10",
+          "guacamole and chips": "$8"
+        },
+        "address": "19 E 2nd St, New York, NY 10003",
+        "food_type": "Mexican"
+      },
+      {
+        "restaurant_name": "Prune",
+        "link": "https://www.prunerestaurant.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "natural wines by the glass": "$8",
+          "small plates": "$10-15",
+          "oysters": "$1 each"
+        },
+        "address": "54 E 1st St, New York, NY 10003",
+        "food_type": "Modern American"
+      },
+      {
+        "restaurant_name": "The Wren",
+        "link": "https://thewrennyc.com/",
+        "happy_hour_time": "4pm to 6pm daily",
+        "food_offered": {
+          "deviled eggs": "$2",
+          "wings": "$10",
+          "burgers": "$12",
+          "cocktails": "$7",
+          "beers": "$6"
+        },
+        "address": "355 Metropolitan Ave, Brooklyn, NY 11211",
+        "food_type": "American Gastropub"
+      },
+      {
+        "restaurant_name": "Clover Hill",
+        "link": "https://www.cloverhillbrooklyn.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "snacks": "$5-8",
+          "glasses of wine": "$7",
+          "draft beers": "$6"
+        },
+        "address": "201 Wythe Ave, Brooklyn, NY 11211",
+        "food_type": "Modern American"
+      },
+      {
+        "restaurant_name": "Bar Goto",
+        "link": "https://www.bargotonyc.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "yakitori skewers": "$2-$4 each",
+          "small plates": "$8-12",
+          "sake": "$6",
+          "Japanese beers": "$7"
+        },
+        "address": "245 E 10th St, New York, NY 10003",
+        "food_type": "Japanese"
+      },
+      {
+        "restaurant_name": "Bar Agricole",
+        "link": "https://www.baragricole.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "oysters": "$1 each",
+          "cheese plates": "$12",
+          "charcuterie plates": "$15",
+          "natural wines by the glass": "$8"
+        },
+        "address": "135 E 12th St, New York, NY 10003",
+        "food_type": "Wine Bar"
+      },
+      {
+        "restaurant_name": "Dante",
+        "link": "https://www.dantenyc.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "Italian snacks": "$8-12",
+          "classic cocktails": "$10",
+          "Italian wines by the glass": "$7"
+        },
+        "address": "79 Macdougal St, New York, NY 10012",
+        "food_type": "Italian"
+      },
+      {
+        "restaurant_name": "The Commodore",
+        "link": "https://www.thecommodorenewyork.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "sliders": "$6",
+          "pretzels": "$8",
+          "deviled eggs": "$4",
+          "beers": "$6",
+          "wine by the glass": "$7"
+        },
+        "address": "308 W 49th St, New York, NY 10019",
+        "food_type": "American Gastropub"
+      },
+      {
+        "restaurant_name": "The Red Cat",
+        "link": "https://www.theredcat.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "raw bar": "$1-$2 per oyster",
+          "cheese plates": "$10",
+          "small plates": "$8-12",
+          "natural wines by the glass": "$8"
+        },
+        "address": "227 10th Ave, New York, NY 10011",
+        "food_type": "American Bistro"
+      },
+      {
+        "restaurant_name": "Bar Primi",
+        "link": "https://www.barprimi.com/",
+        "happy_hour_time": "5:30pm to 7pm daily",
+        "food_offered": {
+          "pasta dishes": "$12",
+          "pizzas": "$15",
+          "natural wines by the glass": "$8",
+          "Italian beers": "$6"
+        },
+        "address": "325 Bowery, New York, NY 10003",
+        "food_type": "Italian"
+      },
+      {
+        "restaurant_name": "Cookshop",
+        "link": "https://www.cookshopny.com/",
+        "happy_hour_time": "4pm to 6pm daily",
+        "food_offered": {
+          "snacks": "$6-8",
+          "glasses of wine": "$7",
+          "draft beers": "$5"
+        },
+        "address": "156 10th Ave, New York, NY 10011",
+        "food_type": "Modern American"
+      },
+      {
+        "restaurant_name": "The River Cafe",
+        "link": "https://www.rivercafe.com/",
+        "happy_hour_time": "5:30pm to 7pm daily",
+        "food_offered": {
+          "bar snacks": "$12-15",
+          "glasses of wine": "$10",
+          "cocktails": "$12"
+        },
+        "address": "1 Water St, Brooklyn, NY 11201",
+        "food_type": "Modern American"
+      },
+      {
+        "restaurant_name": "The Elk",
+        "link": "https://www.theelknyc.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "burgers": "$10",
+          "fries": "$5",
+          "cocktails": "$7",
+          "beers": "$6"
+        },
+        "address": "545 W 23rd St, New York, NY 10011",
+        "food_type": "American Gastropub"
+      },
+      {
+        "restaurant_name": "Little Italy Pizza & Pasta",
+        "link": "https://www.littleitalynycpizza.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "pizzas": "$10-15",
+          "pastas": "$12",
+          "wine by the glass": "$5",
+          "beers": "$4"
+        },
+        "address": "50 Spring St, New York, NY 10012",
+        "food_type": "Italian"
+      },
+      {
+        "restaurant_name": "The Brazen Head",
+        "link": "https://brazenheadnyc.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "pub fare": "$8-12",
+          "beers": "$5",
+          "Irish whiskeys": "$7"
+        },
+        "address": "1039 Lexington Ave, New York, NY 10021",
+        "food_type": "Irish Pub"
+      },
+      {
+        "restaurant_name": "The Dead Rabbit Grocery & Grog",
+        "link": "https://www.deadrabbitnyc.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "snacks": "$5-8",
+          "oysters": "$1 each",
+          "cocktails": "$7",
+          "beers": "$6"
+        },
+        "address": "81 Fulton St, New York, NY 10038",
+        "food_type": "American Gastropub"
+      },
+      {
+        "restaurant_name": "Boqueria Midtown",
+        "link": "https://www.boquerianyc.com/midtown/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "tapas": "20% off",
+          "sangria": "$7",
+          "glasses of wine": "$5"
+        },
+        "address": "21 E 52nd St, New York, NY 10022",
+        "food_type": "Spanish"
+      },
+      {
+        "restaurant_name": "Japas",
+        "link": "https://www.japasnyc.com/",
+        "happy_hour_time": "5:30pm to 7pm daily",
+        "food_offered": {
+          "dumplings": "$7",
+          "small plates": "$12",
+          "sushi rolls": "$10",
+          "Japanese beers": "$6",
+          "sake": "$7"
+        },
+        "address": "45 E 20th St, New York, NY 10003",
+        "food_type": "Japanese"
+      },
+      {
+        "restaurant_name": "The Happiest Hour",
+        "link": "https://www.thehappiesthournyc.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "wings": "$5",
+          "nachos": "$8",
+          "cocktails": "$7",
+          "beers": "$6"
+        },
+        "address": "121 1st Ave, New York, NY 10003",
+        "food_type": "American"
+      },
+      {
+        "restaurant_name": "The Heights Bar & Grill",
+        "link": "https://www.theheightsnyc.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "pretzels": "$8",
+          "fries": "$5",
+          "burgers": "$10",
+          "cocktails": "$7",
+          "beers": "$6"
+        },
+        "address": "2867 Broadway, New York, NY 10025",
+        "food_type": "American"
+      },
+      {
+        "restaurant_name": "The Dead Rabbit",
+        "link": "https://deadrabbitnyc.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "oysters": "$1 each",
+          "deviled eggs": "$2 each",
+          "other snacks": "$5-8 each"
+        },
+        "address": "30 Water St, New York, NY 10004",
+        "food_type": "Irish Gastropub"
+      },
+      {
+        "restaurant_name": "Bar Veloce",
+        "link": "https://www.barveloce.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "cicchetti": "$5-8 each",
+          "pizzas": "$15",
+          "glasses of wine": "$7",
+          "Italian beers": "$6"
+        },
+        "address": "175 2nd Ave, New York, NY 10011",
+        "food_type": "Italian"
+      },
+      {
+        "restaurant_name": "The Dead Poet",
+        "link": "https://www.thedeadpoetnyc.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "snacks": "$5-8",
+          "glasses of wine": "$7",
+          "draft beers": "$6"
+        },
+        "address": "501 Columbus Ave, New York, NY 10024",
+        "food_type": "Modern American"
+      },
+      {
+        "restaurant_name": "Llama San",
+        "link": "https://llamasannyc.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "small plates": "$8-12",
+          "cocktails": "$10",
+          "beers": "$7"
+        },
+        "address": "116 E 16th St, New York, NY 10003",
+        "food_type": "Peruvian"
+      },
+      {
+        "restaurant_name": "The Woof",
+        "link": "https://woofnyc.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "sliders": "$6 each",
+          "wings": "$10",
+          "fries": "$5",
+          "cocktails": "$7",
+          "beers": "$6"
+        },
+        "address": "149 E 14th St, New York, NY 10003",
+        "food_type": "American Gastropub"
+      },
+      {
+        "restaurant_name": "Black Fox Coffee",
+        "link": "https://www.blackfoxcoffee.com/",
+        "happy_hour_time": "3pm to 5pm daily",
+        "food_offered": {
+          "coffee drinks": "$3 off",
+          "pastries": "$2 each",
+          "sandwiches": "$5 each"
+        },
+        "address": "182 2nd Ave, New York, NY 10011",
+        "food_type": "Cafe"
+      },
+      {
+        "restaurant_name": "Miss Lily's 7A",
+        "link": "https://misslilys7a.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "jerk wings": "$10",
+          "plantain fries": "$8",
+          "cocktails": "$12",
+          "rum punch": "$8"
+        },
+        "address": "109 E 7th St, New York, NY 10009",
+        "food_type": "Caribbean"
+      },
+      {
+        "restaurant_name": "Bar Blondeau",
+        "link": "https://barblondeau.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "oysters": "$1 each",
+          "deviled eggs": "$2 each",
+          "snacks": "$5-8 each",
+          "glasses of wine": "$7",
+          "beers": "$6"
+        },
+        "address": "311 W Broadway, New York, NY 10013",
+        "food_type": "French Wine Bar"
+      },
+      {
+        "restaurant_name": "Superiority Burger",
+        "link": "https://www.superiorityburger.com/",
+        "happy_hour_time": "4pm to 6pm daily",
+        "food_offered": {
+          "vegan burgers": "$8-12",
+          "fries": "$5",
+          "shakes": "$7",
+          "beers": "$6"
+        },
+        "address": "125 E 10th St, New York, NY 10003",
+        "food_type": "Vegan"
+      },
+      {
+        "restaurant_name": "The Blind Pig",
+        "link": "https://www.theblindpignyc.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "bar snacks": "$5-8 each",
+          "classic cocktails": "$10",
+          "glasses of wine": "$7"
+        },
+        "address": "230 E 4th St, New York, NY 10009",
+        "food_type": "Cocktail Bar"
+      },
+      {
+        "restaurant_name": "La Esquina",
+        "link": "https://www.laesquinanyc.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "tapas": "$8-12 each",
+          "tequila cocktails": "$10",
+          "mexclas": "$7"
+        },
+        "address": "114 1st Ave, New York, NY 10003",
+        "food_type": "Mexican"
+      },
+      {
+        "restaurant_name": "Clover Club",
+        "link": "https://www.cloverclubnyc.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "snacks": "$8-12",
+          "classic cocktails": "$10",
+          "glasses of wine": "$7"
+        },
+        "address": "575 Hudson St, New York, NY 10014",
+        "food_type": "Cocktail Bar"
+      },
+      {
+        "restaurant_name": "The Commodore",
+        "link": "https://www.thecommodore.nyc/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "sliders": "$6 each",
+          "wings": "$10",
+          "pretzels": "$8",
+          "fries": "$5",
+          "cocktails": "$7",
+          "beers": "$6"
+        },
+        "address": "311 W 49th St, New York, NY 10019",
+        "food_type": "American Gastropub"
+      },
+      {
+        "restaurant_name": "Banh Mi Ngon",
+        "link": "https://www.banhmi-ngon.com/",
+        "happy_hour_time": "3pm to 5pm daily",
+        "food_offered": {
+          "banh mi sandwiches": "$5-8",
+          "spring rolls": "$3 each",
+          "Vietnamese coffees": "$4-5"
+        },
+        "address": "78 1st Ave, New York, NY 10003",
+        "food_type": "Vietnamese"
+      },
+      {
+        "restaurant_name": "Trafi",
+        "link": "https://www.trafinyc.com/",
+        "happy_hour_time": "4pm to 7pm daily",
+        "food_offered": {
+          "mezcal cocktails": "$12",
+          "tequila cocktails": "$10",
+          "guacamole and chips": "$8",
+          "tacos": "$3 each"
+        },
+        "address": "19 E 2nd St, New York, NY 10003",
+        "food_type": "Mexican"
+      },
+      {
+        "restaurant_name": "Bar Goto",
+        "link": "https://www.bargotonyc.com/",
+        "happy_hour_time": "5pm to 7pm daily",
+        "food_offered": {
+          "yakitori skewers": "$2-$4 each",
+          "small plates": "$8-12",
+          "sake": "$6",
+          "Japanese beers": "$7"
+        },
+        "address": "245 E 10th St, New York, NY 10003",
+        "food_type": "Japanese"
       }
   ]
+  

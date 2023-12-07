@@ -18,7 +18,7 @@ const HappyHour = ({name,food,time,link}) => {
 
                     <header className="flex items-center justify-between leading-tight p-2 md:p-4">
                         <h1 className="text-lg">
-                            <a className="no-underline hover:underline text-black" href="#">
+                            <a className="no-underline hover:underline text-black">
                                 {name}
                             </a>
                         </h1>
@@ -28,12 +28,12 @@ const HappyHour = ({name,food,time,link}) => {
                     </header>
 
                     <footer className="flex items-center justify-between leading-none p-2 md:p-4">
-                        <a className="flex items-center no-underline hover:underline text-black" href="#">
+                        <a className="flex items-center no-underline hover:underline text-black" target="_blank" href={link}>
                             <p className="ml-2 text-sm">
                                 {link}
                             </p>
                         </a>
-                        <a className="no-underline text-grey-darker hover:text-red-dark" href="#">
+                        <a className="no-underline text-grey-darker hover:text-red-dark">
                             <span className="hidden">Like</span>
                             <div className="App">
                                 <Heart isclick={isclick} onClick={() => setClick(!isclick)} />
