@@ -1,6 +1,5 @@
 import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js";
 import UserPool from "./UserPool";
-import { useContext } from "react";
 
 export const authenticate = async ({ Username, Password })=>{
 

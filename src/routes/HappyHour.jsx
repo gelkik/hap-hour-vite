@@ -3,9 +3,18 @@ import Heart from "react-animated-heart";
 import API_BASE_URL from '../AWS/config'
 
 
-const HappyHour = ({name,food,time,link}) => {
+const HappyHour = ({seed,setLat,setLng,setZoom}) => {
 
     const [isclick, setClick] = useState(false);
+
+    const handleZoomClick = () =>{
+        setLat(seed.latitude)
+        setLng(seed.longitude)
+        setZoom(15)
+    }
+
+
+
     return (
         <div className="container my-12 mx-auto px-4 md:px-12">
             <div className="flex flex-wrap -mx-1 lg:-mx-4">
@@ -18,19 +27,19 @@ const HappyHour = ({name,food,time,link}) => {
 
                     <header className="flex items-center justify-between leading-tight p-2 md:p-4">
                         <h1 className="text-lg">
-                            <a className="no-underline hover:underline text-black">
-                                {name}
+                            <a className="no-underline hover:underline text-black cursor-pointer"onClick={handleZoomClick}>
+                                {seed.restaurant_name}
                             </a>
                         </h1>
                         <p className="text-grey-darker text-sm">
-                            {time}
+                            {seed.happy_hour_time}
                         </p>
                     </header>
 
                     <footer className="flex items-center justify-between leading-none p-2 md:p-4">
-                        <a className="flex items-center no-underline hover:underline text-black" target="_blank" href={link}>
+                        <a className="flex items-center no-underline hover:underline text-black" target="_blank" href={seed.link}>
                             <p className="ml-2 text-sm">
-                                {link}
+                                {seed.link}
                             </p>
                         </a>
                         <a className="no-underline text-grey-darker hover:text-red-dark">

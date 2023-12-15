@@ -18,13 +18,13 @@ const Home = () => {
     const [zoom, setZoom] = useState(10);
 
     const handleZoomClick = (e) =>{
-        setLat(e.latitude)
-        setLng(e.longitude)
-        setZoom(14)
+        // setLat(e.latitude)
+        // setLng(e.longitude)
+        // setZoom(14)
+        console.log(lng,lat,e.restaurant_name)
     }
 
     useEffect(() => {
-        // if (map.current) return; // initialize map only once
         if (!mapContainer.current) return
         const map = new mapboxgl.Map({
             container: mapContainer.current,
@@ -32,28 +32,19 @@ const Home = () => {
             center: [lng, lat],
             zoom: zoom
         });
-
+        
         seedData.forEach((seed) => {
             const marker = new mapboxgl.Marker({
                 color: 'red', 
             })
                 .setLngLat([seed.longitude, seed.latitude])
-                .setPopup(new mapboxgl.Popup().setHTML(`<a class="text-sm font-semibold hover:underline cursor-pointer" id="marker-link-${seed.restaurant_name}">${seed.restaurant_name}</a>`))
+                .setPopup(new mapboxgl.Popup().setHTML(`<a href="${seed.link}" target="_blank" class="text-sm font-semibold hover:underline cursor-pointer" id="marker-link-${seed.restaurant_name}">${seed.restaurant_name}</a>`))
                 .addTo(map);
     
         });
-            
-        // Cleanup when component is unmounted
         return () => map.remove();
     }, [mapContainer, lng, lat, zoom]);
 
-    // const [viewport, setViewport] = useState({
-    //     width: '100%',
-    //     height: '100%',
-    //     latitude: 37.7749,
-    //     longitude: -122.4194,
-    //     zoom: 12,
-    //   });
 
 
     return (
@@ -64,11 +55,10 @@ const Home = () => {
             {seedData.map((seed) => (
                 <HappyHour
                     key={seed.restaurant_name} 
-                    name={seed.restaurant_name}
-                    time={seed.happy_hour_time}
-                    link={seed.link}
-                    food={seed.food_offered}
-                
+                    seed={seed}
+                    setLng={setLng}
+                    setLat={setLat}
+                    setZoom={setZoom}
                 />
             ))}
         </div>
