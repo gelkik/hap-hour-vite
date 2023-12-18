@@ -41,8 +41,11 @@ export const authenticate = async ({ Username, Password })=>{
 export const logout = () => {
     const cognitoUser = UserPool.getCurrentUser();
     if (cognitoUser){
-        cognitoUser.signOut();
-        window.location.href = '/';
+        // cognitoUser.signOut();
+        // window.location.href = '/';
+        cognitoUser.signOut(() => {
+            window.location.href = '/';
+        });
     }
     else{
         console.log('Logout Error.')

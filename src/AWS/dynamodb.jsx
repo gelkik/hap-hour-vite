@@ -9,24 +9,23 @@ AWS.config.update({
     secretAccessKey: AWS_SECRET_ACCESS_KEY,
   });
 
-// Create a DynamoDB DocumentClient
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
-// Example: PutItem
-const params = {
-  TableName: 'Users',
-  Item: {
-    userId: 'uniqueUserId',
-    username: 'john_doe',
-    email: 'john@example.com',
-    // other attributes
-  },
-};
+export const createUser = async (username,password,email,cognitoUserId) => {
+    const params = {
+      TableName: "Users",
+      Item: {
+        userID: cognitoUserId,
+        username: username,
+        email: email,
+        password: password,
+      }
+    };
 
-dynamoDb.put(params, (err, data) => {
-  if (err) {
-    console.error('Unable to add user', err);
-  } else {
-    console.log('User added successfully', data);
-  }
-});
+    try {
+      await dynamoDb.put(params).promise();
+      console.log(`User with ID: ${cognitoUserId} and Username: ${username} added.`);
+    } catch (err) {
+      console.error("Unable to add user", JSON.stringify(err, null, 2));
+    }
+  };

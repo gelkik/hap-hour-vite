@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { CognitoUserAttribute, CognitoUser } from 'amazon-cognito-identity-js';
 import AppContext from '../../context/AppContext'
 import UserPool from '../../AWS/UserPool';
+import { createUser } from '../../AWS/dynamodb'
 
 const Signup = () => {
 
@@ -15,6 +16,7 @@ const Signup = () => {
     const [emailErr, setEmailErr] = useState('');
     const [signupErr, setSignupErr] = useState('');
     const [passwordErr, setPasswordErr] = useState('');
+    const [cognitoUserId, setCognitoUserId] = useState(null);
     const [cognitoUser, setCognitoUser] = useState(null);
     const [confirmationCode, setConfirmationCode] = useState("");
     const [registrationPending, setRegistrationPending] = useState(false);
@@ -91,48 +93,126 @@ const Signup = () => {
         );
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
+    // const handleSubmit = (e) => {
+    //     e.preventDefault()
+    //     setUsernameErr("");
+    //     setEmailErr("");
+    //     setPasswordErr("");
+    //     validation()
+    //     .then((res) => {
+    //         if (res.username === '' && res.password === '' && res.email === '') {
+    //             const attributeList = [];
+    //             attributeList.push(
+    //                 new CognitoUserAttribute({
+    //                     Name: 'email',
+    //                     Value: email,
+    //                 })
+    //             );
+                
+    //             UserPool.signUp(username, password, attributeList, null, (err, data) => {
+    //                 if (err) {
+    //                     console.log(err);
+    //                     JSON.stringify(err);
+    //                     // alert("Couldn't sign up");
+    //                     const errorMessage = err.message.split(': ')[1];
+
+    //                     setSignupErr(errorMessage);
+    //                 } 
+    //                 else {
+    //                     console.log(data);
+    //                     setCognitoUser(new CognitoUser({
+    //                         Username: username,
+    //                         Pool: UserPool,
+    //                     }));
+    //                     setUser({username: username})
+    //                     setRegistrationPending(true);
+    //                     // setCognitoUserId(data.userSub);
+    //                     // alert('User Added Successfully');
+    //                     // Navigate('/favorites');
+    //                 }
+    //             });
+    //         }
+    //     }, 
+    //     err => console.log(err))
+    //     .catch(err => console.log(err));
+    // }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
         setUsernameErr("");
         setEmailErr("");
         setPasswordErr("");
-        validation()
-        .then((res) => {
-            if (res.username === '' && res.password === '' && res.email === '') {
-                const attributeList = [];
-                attributeList.push(
-                    new CognitoUserAttribute({
-                        Name: 'email',
-                        Value: email,
-                    })
-                );
-                
+      
+        try {
+          const res = await validation();
+          if (res.username === '' && res.password === '' && res.email === '') {
+            const attributeList = [
+              new CognitoUserAttribute({
+                Name: 'email',
+                Value: email,
+              }),
+            ];
+      
+            const signUpPromise = () =>
+              new Promise((resolve, reject) => {
                 UserPool.signUp(username, password, attributeList, null, (err, data) => {
-                    if (err) {
-                        console.log(err);
-                        JSON.stringify(err);
-                        // alert("Couldn't sign up");
-                        const errorMessage = err.message.split(': ')[1];
+                  if (err) {
+                    console.log(err);
+                    JSON.stringify(err);
+                    // alert("Couldn't sign up");
+                    const errorMessage = err.message.split(': ')[1];
+                    setSignupErr(errorMessage);
+                    reject(err);
+                  } 
+                  else {
+                    console.log(data);
+                    setCognitoUser(new CognitoUser({
+                      Username: username,
+                      Pool: UserPool,
+                    }));
 
-                        setSignupErr(errorMessage);
-                    } 
-                    else {
-                        console.log(data);
-                        setCognitoUser(new CognitoUser({
-                            Username: username,
-                            Pool: UserPool,
-                        }));
-                        setUser({username: username})
-                        setRegistrationPending(true);
-                        // alert('User Added Successfully');
-                        // Navigate('/favorites');
-                    }
+                    setUser({ username: username });
+                    setRegistrationPending(true);
+                    setCognitoUserId(data.userSub);
+                    resolve(data);
+                  };
                 });
-            }
-        }, 
-        err => console.log(err))
-        .catch(err => console.log(err));
-    }
+              });
+            const data = await signUpPromise();
+            await createUser(username, password, email, data.userSub);
+          }
+        } catch (err) {
+          console.error('Error:', err);
+        }
+      };
+      
+    //   const handleSignUp = async () => {
+    
+    //     if (!username) {
+    //       return; 
+    //     }
+        
+    //     try {
+    //       await createUser(username, password, email, cognitoUserId);
+    //     } catch (err) {
+    //       console.error('Error:', err); 
+    //     }
+    //   };
+
+    //   const handleNewUserSignup = async (e) => {
+    //     e.preventDefault();
+    //     try {
+    //       handleSubmit();
+    //       console.log(`Cognito userId: ${cognitoUserId}`)
+    //       await handleSignUp();
+    
+    //     } catch (error) {
+    //       console.error(error);
+    //     }
+    //   };
+      
+
+
     return (
         <div className="h-screen flex">
             {registrationPending ? 

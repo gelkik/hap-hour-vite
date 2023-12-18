@@ -7,7 +7,8 @@ const Header = () => {
 
     const { user,setUser } = useContext(AppContext);
 
-    const handleLogout = ()=>{
+    const handleLogout = (e) => {
+        e.preventDefault();
         logout();
         setUser(null);
     }
@@ -46,7 +47,7 @@ const Header = () => {
                     </div>
                     {user ? 
                     <div>
-                        <a className="ml-4 text-xl text-neutral-800 dark:text-neutral-200" onClick={handleLogout}><Link to="/logout">Logout</Link></a> 
+                        <a className="ml-4 text-xl text-neutral-800 dark:text-neutral-200" onClick={handleLogout}><Link to="/login">Logout</Link></a> 
                     </div>
                     : 
                     <a className="ml-2 text-xl text-neutral-800 dark:text-neutral-200"><Link to="/login">Login</Link></a>}

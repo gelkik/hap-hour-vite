@@ -119,7 +119,8 @@ const Login = () => {
                 {passwordErr && <p className="text-red-600 mt-1 -mb-1">{passwordErr}</p>}
                 <span className="justify-between text-sm hover:text-blue-500 cursor-pointer font-bold text-gray-200">Forgot Password?</span>
                 <button type="submit" className="block w-full text-white-100 bg-indigo-600 mt-2 py-2 rounded-2xl text-white font-semibold mb-2">Login</button>
-                {loginErr && <p className="text-red-600 mt-1 -mb-1">{loginErr}</p>}
+                    {loginErr && <p className="text-red-600 mt-1 -mb-1">{loginErr}</p>}
+                <a href='/signup' className="text-blue-600 font-bold text-1x1  hover:underline cursor-pointer">Don't have an account?</a>
                 </form>
             </div>
         </div>
