@@ -22,11 +22,23 @@ const Signup = () => {
     const [registrationPending, setRegistrationPending] = useState(false);
     const [togglePass, setTogglePass] = useState(false)
 
+    // useEffect(() => {
+    //     // If user is already logged in, redirect to the home page
+    //     if (user) {
+    //         navigate('/favorites'); // or the desired route
+    //     }
+    // }, [user, navigate]);
+
     useEffect(() => {
-        // If user is already logged in, redirect to the home page
-        if (user) {
-            navigate('/favorites'); // or the desired route
-        }
+        const checkConfirmation = async () => {
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            if (user && user.isConfirmed) {
+                console.log('User already signed up.')
+                navigate('/favorites');
+            }
+        };
+    
+        checkConfirmation();
     }, [user, navigate]);
 
     const formInputChange = (formField, value) => {
@@ -165,7 +177,7 @@ const Signup = () => {
                     reject(err);
                   } 
                   else {
-                    console.log(data);
+                    // console.log(data);
                     setCognitoUser(new CognitoUser({
                       Username: username,
                       Pool: UserPool,

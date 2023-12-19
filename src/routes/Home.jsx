@@ -1,5 +1,5 @@
 import 'mapbox-gl/dist/mapbox-gl.css';
-import React, { useRef, useState,useEffect } from "react";
+import React, { useRef, useState,useEffect, useContext } from "react";
 import HappyHour from "./HappyHour";
 import seedData from '../seedData.json'
 // import ReactMapGL, { Marker, Popup } from 'react-map-gl';
@@ -9,21 +9,18 @@ mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_API_KEY
 
 const Home = () => {
     
-    // const [map,setMap] = useState(null)
     const mapContainer = useRef(null);
-    // const map = useRef(null);
-    // 40.7831° N, 73.9712° W
+    
     const [lng, setLng] = useState(-73.9712);
-    const [lat, setLat] = useState(40.7831);
-    const [zoom, setZoom] = useState(10);
+    const [lat, setLat] = useState(40.7601);
+    const [zoom, setZoom] = useState(10.5);
 
-    const handleZoomClick = (e) =>{
-        // setLat(e.latitude)
-        // setLng(e.longitude)
-        // setZoom(14)
-        console.log(lng,lat,e.restaurant_name)
-    }
-
+    // const handleZoomClick = (e) =>{
+    //     // setLat(e.latitude)
+    //     // setLng(e.longitude)
+    //     // setZoom(14)
+    //     console.log(lng,lat,e.restaurant_name)
+    // }
     useEffect(() => {
         if (!mapContainer.current) return
         const map = new mapboxgl.Map({

@@ -7,11 +7,22 @@ const Header = () => {
 
     const { user,setUser } = useContext(AppContext);
 
-    const handleLogout = (e) => {
+    // const handleLogout = (e) => {
+    //     e.preventDefault();
+    //     logout();
+    //     setUser(null);
+    // }
+    
+    const handleLogout = async (e) => {
         e.preventDefault();
-        logout();
-        setUser(null);
+        try {
+            await logout();
+            setUser(null);
+        } catch (error) {
+            console.error('Logout Error:', error);
+        }
     }
+
 
     return (
         <>
