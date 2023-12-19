@@ -48,7 +48,7 @@ const Home = () => {
         <div>
 
             <div ref={mapContainer} className="h-96" />    
-
+        <div className="container my-12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
             {seedData.map((seed) => (
                 <HappyHour
                     key={seed.restaurant_name} 
@@ -58,6 +58,7 @@ const Home = () => {
                     setZoom={setZoom}
                 />
             ))}
+        </div>
         </div>
         
     )
