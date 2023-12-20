@@ -59,7 +59,7 @@ const Login = () => {
             if (res.username === '' && res.password === '') {
                 authenticate({ Username: username, Password: password })
                     .then((data)=>{
-                        console.log(data);
+                        // console.log(data);
                         
                         setLoginErr('');
                         setUser(username)

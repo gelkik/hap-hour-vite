@@ -195,6 +195,7 @@ const Signup = () => {
           }
         } catch (err) {
           console.error('Error:', err);
+          alert(`Error: ${err.message.split(":")[0]}.`)
         }
       };
       
@@ -283,6 +284,7 @@ const Signup = () => {
                     </div>
                     {passwordErr && <p className="text-red-600 mt-1 -mb-1">{passwordErr}</p>}
                     <button type="submit" className="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white-100 font-semibold mb-2">Sign Up</button>
+
                     <a href='/login' className="text-blue-600 font-bold text-1x1  hover:underline cursor-pointer">Already have an account?</a>
                 </form>
             </div>}
