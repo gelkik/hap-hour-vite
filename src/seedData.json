@@ -10,8 +10,9 @@
     },
     "address": "5 Spring St, New York, NY 10013",
     "food_type": "American Gastropub",
-    "latitude": 40.72132325,
-    "longitude": -73.9942805358722
+    "id": 1,
+    "latitude": "40.7213232499999975289028952829539775848388671875",
+    "longitude": "-73.994280535872206883141188882291316986083984375"
   },
   {
     "restaurant_name": "Tavern 29",
@@ -24,8 +25,9 @@
     },
     "address": "47 E 29th St, New York, NY 10016",
     "food_type": "American Comfort Food",
-    "latitude": 40.7442428,
-    "longitude": -73.9839881
+    "id": 2,
+    "latitude": "40.74424280000000209156496566720306873321533203125",
+    "longitude": "-73.983988100000004806133802048861980438232421875"
   },
   {
     "restaurant_name": "Cask Bar & Kitchen",
@@ -38,8 +40,9 @@
     },
     "address": "167 E 33rd St, New York, NY 10016",
     "food_type": "Pub Fare",
-    "latitude": 40.7454264,
-    "longitude": -73.97897424501085
+    "id": 3,
+    "latitude": "40.7454263999999994894096744246780872344970703125",
+    "longitude": "-73.978974245010846289005712606012821197509765625"
   },
   {
     "restaurant_name": "Employees Only",
@@ -52,8 +55,9 @@
     },
     "address": "510 Hudson St, New York, NY 10014",
     "food_type": "American Gastropub",
-    "latitude": 40.7334339,
-    "longitude": -74.0060767
+    "id": 4,
+    "latitude": "40.73343390000000141526470542885363101959228515625",
+    "longitude": "-74.00607669999999416177161037921905517578125"
   },
   {
     "restaurant_name": "Black Tap Craft Burgers & Beer",
@@ -66,8 +70,9 @@
     },
     "address": "525 5th Ave, New York, NY 10017",
     "food_type": "American",
-    "latitude": 40.7474905,
-    "longitude": -73.9851225
+    "id": 5,
+    "latitude": "40.747490499999997837221599183976650238037109375",
+    "longitude": "-73.9851225000000027876012609340250492095947265625"
   },
   {
     "restaurant_name": "The Happiest Hour",
@@ -80,8 +85,9 @@
     },
     "address": "127 1st Ave, New York, NY 10003",
     "food_type": "American",
-    "latitude": 40.72746895,
-    "longitude": -73.98569574999999
+    "id": 6,
+    "latitude": "40.7274689500000022235326468944549560546875",
+    "longitude": "-73.9856957499999907668097876012325286865234375"
   },
   {
     "restaurant_name": "Boqueria Soho",
@@ -94,8 +100,9 @@
     },
     "address": "190 Prince St, New York, NY 10012",
     "food_type": "Spanish",
-    "latitude": 40.7265089,
-    "longitude": -74.0025825
+    "id": 7,
+    "latitude": "40.726508899999998902785591781139373779296875",
+    "longitude": "-74.0025825000000025966073735617101192474365234375"
   },
   {
     "restaurant_name": "Morimoto Asia",
@@ -108,8 +115,9 @@
     },
     "address": "88 5th Ave, New York, NY 10011",
     "food_type": "Pan-Asian",
-    "latitude": 40.736329250000004,
-    "longitude": -73.993506125
+    "id": 8,
+    "latitude": "40.73632925000000426507540396414697170257568359375",
+    "longitude": "-73.9935061249999961319190333597362041473388671875"
   },
   {
     "restaurant_name": "The Modern",
@@ -122,8 +130,9 @@
     },
     "address": "9 W 53rd St, New York, NY 10019",
     "food_type": "Modern American",
-    "latitude": 40.76118925,
-    "longitude": -73.9770093015525
+    "id": 9,
+    "latitude": "40.761189250000001038642949424684047698974609375",
+    "longitude": "-73.977009301552499209719826467335224151611328125"
   },
   {
     "restaurant_name": "The NoMad Bar",
@@ -136,8 +145,9 @@
     },
     "address": "1170 Broadway, New York, NY 10001",
     "food_type": "American Gastropub",
-    "latitude": 40.744924600000004,
-    "longitude": -73.98859595269975
+    "id": 10,
+    "latitude": "40.7449246000000044887201511301100254058837890625",
+    "longitude": "-73.9885959526997538659998099319636821746826171875"
   },
   {
     "restaurant_name": "The Spotted Pig",
@@ -150,8 +160,9 @@
     },
     "address": "314 W 11th St, New York, NY 10014",
     "food_type": "Italian Gastropub",
-    "latitude": 40.73563215,
-    "longitude": -74.00667612644291
+    "id": 11,
+    "latitude": "40.7356321500000007063135853968560695648193359375",
+    "longitude": "-74.0066761264429118227781145833432674407958984375"
   },
   {
     "restaurant_name": "The Waverly Inn",
@@ -164,8 +175,9 @@
     },
     "address": "16 Bank St, New York, NY 10014",
     "food_type": "American Pub Fare",
-    "latitude": 40.7369557,
-    "longitude": -74.002226
+    "id": 12,
+    "latitude": "40.73695570000000287791408482007682323455810546875",
+    "longitude": "-74.0022259999999931778802420012652873992919921875"
   },
   {
     "restaurant_name": "The Dutch",
@@ -178,8 +190,9 @@
     },
     "address": "131 E 27th St, New York, NY 10016",
     "food_type": "American Gastropub",
-    "latitude": 40.74237235,
-    "longitude": -73.98318747814686
+    "id": 13,
+    "latitude": "40.7423723499999965724782668985426425933837890625",
+    "longitude": "-73.9831874781468599167055799625813961029052734375"
   },
   {
     "restaurant_name": "The Grill Room",
@@ -192,8 +205,9 @@
     },
     "address": "40 E 49th St, New York, NY 10017",
     "food_type": "American Steakhouse",
-    "latitude": 40.75706412903226,
-    "longitude": -73.97586977419354
+    "id": 14,
+    "latitude": "40.7570641290322583927263622172176837921142578125",
+    "longitude": "-73.97586977419354070661938749253749847412109375"
   },
   {
     "restaurant_name": "Casa Dani",
@@ -206,8 +220,9 @@
     },
     "address": "124 E 46th St, New York, NY 10017",
     "food_type": "Spanish Tapas",
-    "latitude": 40.753725836734695,
-    "longitude": -73.9737782244898
+    "id": 15,
+    "latitude": "40.75372583673469506493347580544650554656982421875",
+    "longitude": "-73.9737782244898056660531437955796718597412109375"
   },
   {
     "restaurant_name": "Bar Tabac",
@@ -220,8 +235,9 @@
     },
     "address": "45 E 58th St, New York, NY 10022",
     "food_type": "French Bistro",
-    "latitude": 40.7626547,
-    "longitude": -73.9708774
+    "id": 16,
+    "latitude": "40.7626546999999987974661053158342838287353515625",
+    "longitude": "-73.97087740000000621876097284257411956787109375"
   },
   {
     "restaurant_name": "The Dutch Kills",
@@ -234,8 +250,9 @@
     },
     "address": "275 Lorimer St, Brooklyn, NY 11206",
     "food_type": "American Gastropub",
-    "latitude": 40.70519195918367,
-    "longitude": -73.94805063265306
+    "id": 17,
+    "latitude": "40.70519195918367216791011742316186428070068359375",
+    "longitude": "-73.94805063265306444009183906018733978271484375"
   },
   {
     "restaurant_name": "St Anselm",
@@ -248,8 +265,9 @@
     },
     "address": "355 Metropolitan Ave, Brooklyn, NY 11211",
     "food_type": "American Steakhouse",
-    "latitude": 40.71426675,
-    "longitude": -73.95604492919315
+    "id": 18,
+    "latitude": "40.71426675000000017234924598596990108489990234375",
+    "longitude": "-73.956044929193154757740558125078678131103515625"
   },
   {
     "restaurant_name": "Casa Mono",
@@ -262,8 +280,9 @@
     },
     "address": "51 Irving Pl, New York, NY 10003",
     "food_type": "Spanish Tapas",
-    "latitude": 40.7360412,
-    "longitude": -73.9874808
+    "id": 19,
+    "latitude": "40.7360412000000025045665097422897815704345703125",
+    "longitude": "-73.9874808000000001584339770488440990447998046875"
   },
   {
     "restaurant_name": "Estela",
@@ -276,8 +295,9 @@
     },
     "address": "47 E Houston St, New York, NY 10012",
     "food_type": "Modern American",
-    "latitude": 40.7246346,
-    "longitude": -73.99476689398942
+    "id": 20,
+    "latitude": "40.72463460000000168292899616062641143798828125",
+    "longitude": "-73.9947668939894214190644561313092708587646484375"
   },
   {
     "restaurant_name": "Prune",
@@ -290,8 +310,9 @@
     },
     "address": "54 E 1st St, New York, NY 10003",
     "food_type": "Modern American",
-    "latitude": 40.723888099999996,
-    "longitude": -73.98938904653647
+    "id": 21,
+    "latitude": "40.7238880999999963705704431049525737762451171875",
+    "longitude": "-73.98938904653647341547184623777866363525390625"
   },
   {
     "restaurant_name": "The Wren",
@@ -306,8 +327,9 @@
     },
     "address": "355 Metropolitan Ave, Brooklyn, NY 11211",
     "food_type": "American Gastropub",
-    "latitude": 40.71426675,
-    "longitude": -73.95604492919315
+    "id": 22,
+    "latitude": "40.71426675000000017234924598596990108489990234375",
+    "longitude": "-73.956044929193154757740558125078678131103515625"
   },
   {
     "restaurant_name": "Clover Hill",
@@ -320,8 +342,9 @@
     },
     "address": "201 Wythe Ave, Brooklyn, NY 11211",
     "food_type": "Modern American",
-    "latitude": 40.717712,
-    "longitude": -73.962237
+    "id": 23,
+    "latitude": "40.71771199999999879537426750175654888153076171875",
+    "longitude": "-73.9622370000000017853380995802581310272216796875"
   },
   {
     "restaurant_name": "Bar Goto",
@@ -335,8 +358,9 @@
     },
     "address": "245 E 10th St, New York, NY 10003",
     "food_type": "Japanese",
-    "latitude": 40.7287636,
-    "longitude": -73.9841408
+    "id": 24,
+    "latitude": "40.72876360000000062200342654250562191009521484375",
+    "longitude": "-73.984140800000005810943548567593097686767578125"
   },
   {
     "restaurant_name": "Bar Agricole",
@@ -350,8 +374,9 @@
     },
     "address": "135 E 12th St, New York, NY 10003",
     "food_type": "Wine Bar",
-    "latitude": 40.7323465,
-    "longitude": -73.98853460401861
+    "id": 25,
+    "latitude": "40.73234649999999845704223844222724437713623046875",
+    "longitude": "-73.988534604018610707498737610876560211181640625"
   },
   {
     "restaurant_name": "Dante",
@@ -364,8 +389,9 @@
     },
     "address": "79 Macdougal St, New York, NY 10012",
     "food_type": "Italian",
-    "latitude": 40.7287909,
-    "longitude": -74.0016623
+    "id": 26,
+    "latitude": "40.72879089999999990823198459111154079437255859375",
+    "longitude": "-74.0016623000000066667780629359185695648193359375"
   },
   {
     "restaurant_name": "The Commodore",
@@ -380,8 +406,9 @@
     },
     "address": "308 W 49th St, New York, NY 10019",
     "food_type": "American Gastropub",
-    "latitude": 40.76180305,
-    "longitude": -73.98743809999999
+    "id": 27,
+    "latitude": "40.761803049999997483610059134662151336669921875",
+    "longitude": "-73.987438099999991436561685986816883087158203125"
   },
   {
     "restaurant_name": "The Red Cat",
@@ -395,8 +422,9 @@
     },
     "address": "227 10th Ave, New York, NY 10011",
     "food_type": "American Bistro",
-    "latitude": 40.74811665,
-    "longitude": -74.00416841000009
+    "id": 28,
+    "latitude": "40.7481166500000000496584107168018817901611328125",
+    "longitude": "-74.00416841000009071649401448667049407958984375"
   },
   {
     "restaurant_name": "Bar Primi",
@@ -410,8 +438,9 @@
     },
     "address": "325 Bowery, New York, NY 10003",
     "food_type": "Italian",
-    "latitude": 40.7256841,
-    "longitude": -73.9917740972964
+    "id": 29,
+    "latitude": "40.72568410000000227455529966391623020172119140625",
+    "longitude": "-73.99177409729639975921600125730037689208984375"
   },
   {
     "restaurant_name": "Cookshop",
@@ -424,8 +453,9 @@
     },
     "address": "156 10th Ave, New York, NY 10011",
     "food_type": "Modern American",
-    "latitude": 40.7457175,
-    "longitude": -74.0054589
+    "id": 30,
+    "latitude": "40.7457174999999978126652422361075878143310546875",
+    "longitude": "-74.0054588999999936049789539538323879241943359375"
   },
   {
     "restaurant_name": "The River Cafe",
@@ -438,8 +468,9 @@
     },
     "address": "1 Water St, Brooklyn, NY 11201",
     "food_type": "Modern American",
-    "latitude": 40.703381,
-    "longitude": -73.992379
+    "id": 31,
+    "latitude": "40.70338100000000025602275854907929897308349609375",
+    "longitude": "-73.992378999999999678038875572383403778076171875"
   },
   {
     "restaurant_name": "The Elk",
@@ -453,8 +484,9 @@
     },
     "address": "545 W 23rd St, New York, NY 10011",
     "food_type": "American Gastropub",
-    "latitude": 40.74834657142857,
-    "longitude": -74.00550628571429
+    "id": 32,
+    "latitude": "40.7483465714285699732499779202044010162353515625",
+    "longitude": "-74.005506285714290015675942413508892059326171875"
   },
   {
     "restaurant_name": "Little Italy Pizza & Pasta",
@@ -468,8 +500,9 @@
     },
     "address": "50 Spring St, New York, NY 10012",
     "food_type": "Italian",
-    "latitude": 40.72191155,
-    "longitude": -73.99651488518123
+    "id": 33,
+    "latitude": "40.7219115500000015117620932869613170623779296875",
+    "longitude": "-73.9965148851812273278483189642429351806640625"
   },
   {
     "restaurant_name": "The Brazen Head",
@@ -482,8 +515,9 @@
     },
     "address": "1039 Lexington Ave, New York, NY 10021",
     "food_type": "Irish Pub",
-    "latitude": 40.771921,
-    "longitude": -73.9609880909091
+    "id": 34,
+    "latitude": "40.77192099999999896908775554038584232330322265625",
+    "longitude": "-73.96098809090909753649611957371234893798828125"
   },
   {
     "restaurant_name": "The Dead Rabbit Grocery & Grog",
@@ -497,8 +531,9 @@
     },
     "address": "81 Fulton St, New York, NY 10038",
     "food_type": "American Gastropub",
-    "latitude": 40.70911022222222,
-    "longitude": -74.00574322222222
+    "id": 35,
+    "latitude": "40.709110222222221864285529591143131256103515625",
+    "longitude": "-74.0057432222222217887974693439900875091552734375"
   },
   {
     "restaurant_name": "Boqueria Midtown",
@@ -511,8 +546,9 @@
     },
     "address": "21 E 52nd St, New York, NY 10022",
     "food_type": "Spanish",
-    "latitude": 40.7593126,
-    "longitude": -73.9748883
+    "id": 36,
+    "latitude": "40.7593126000000012254531611688435077667236328125",
+    "longitude": "-73.974888300000003482637112028896808624267578125"
   },
   {
     "restaurant_name": "Japas",
@@ -527,8 +563,9 @@
     },
     "address": "45 E 20th St, New York, NY 10003",
     "food_type": "Japanese",
-    "latitude": 40.738936317073176,
-    "longitude": -73.98897073170731
+    "id": 37,
+    "latitude": "40.73893631707317553036773460917174816131591796875",
+    "longitude": "-73.9889707317073117565087159164249897003173828125"
   },
   {
     "restaurant_name": "The Heights Bar & Grill",
@@ -543,8 +580,9 @@
     },
     "address": "2867 Broadway, New York, NY 10025",
     "food_type": "American",
-    "latitude": 40.8051606,
-    "longitude": -73.9663307
+    "id": 38,
+    "latitude": "40.80516060000000067020664573647081851959228515625",
+    "longitude": "-73.9663307000000003199602360837161540985107421875"
   },
   {
     "restaurant_name": "The Dead Rabbit",
@@ -557,8 +595,9 @@
     },
     "address": "30 Water St, New York, NY 10004",
     "food_type": "Irish Gastropub",
-    "latitude": 40.70327555,
-    "longitude": -74.01101574725185
+    "id": 39,
+    "latitude": "40.70327555000000074869603849947452545166015625",
+    "longitude": "-74.0110157472518466192923369817435741424560546875"
   },
   {
     "restaurant_name": "Bar Veloce",
@@ -572,8 +611,9 @@
     },
     "address": "175 2nd Ave, New York, NY 10011",
     "food_type": "Italian",
-    "latitude": 40.7306266,
-    "longitude": -73.9864468
+    "id": 40,
+    "latitude": "40.73062660000000079207893577404320240020751953125",
+    "longitude": "-73.9864467999999959602064336650073528289794921875"
   },
   {
     "restaurant_name": "The Dead Poet",
@@ -586,8 +626,9 @@
     },
     "address": "501 Columbus Ave, New York, NY 10024",
     "food_type": "Modern American",
-    "latitude": 40.7852044,
-    "longitude": -73.9728827
+    "id": 41,
+    "latitude": "40.7852043999999978041159920394420623779296875",
+    "longitude": "-73.9728826999999995450707501731812953948974609375"
   },
   {
     "restaurant_name": "Llama San",
@@ -600,8 +641,9 @@
     },
     "address": "116 E 16th St, New York, NY 10003",
     "food_type": "Peruvian",
-    "latitude": 40.7354298,
-    "longitude": -73.9884636
+    "id": 42,
+    "latitude": "40.73542979999999857909642742015421390533447265625",
+    "longitude": "-73.9884636000000028843714972026646137237548828125"
   },
   {
     "restaurant_name": "The Woof",
@@ -616,8 +658,9 @@
     },
     "address": "149 E 14th St, New York, NY 10003",
     "food_type": "American Gastropub",
-    "latitude": 40.73386007807069,
-    "longitude": -73.98830410162418
+    "id": 43,
+    "latitude": "40.7338600780706912019013543613255023956298828125",
+    "longitude": "-73.98830410162418047548271715641021728515625"
   },
   {
     "restaurant_name": "Black Fox Coffee",
@@ -630,8 +673,9 @@
     },
     "address": "182 2nd Ave, New York, NY 10011",
     "food_type": "Cafe",
-    "latitude": 40.730607750000004,
-    "longitude": -73.98585156077846
+    "id": 44,
+    "latitude": "40.7306077500000043301042751409113407135009765625",
+    "longitude": "-73.985851560778456814659875817596912384033203125"
   },
   {
     "restaurant_name": "Miss Lily's 7A",
@@ -645,8 +689,9 @@
     },
     "address": "109 E 7th St, New York, NY 10009",
     "food_type": "Caribbean",
-    "latitude": 40.726777727272726,
-    "longitude": -73.98503127272727
+    "id": 45,
+    "latitude": "40.72677772727272582642399356700479984283447265625",
+    "longitude": "-73.9850312727272694246494211256504058837890625"
   },
   {
     "restaurant_name": "Bar Blondeau",
@@ -661,8 +706,9 @@
     },
     "address": "311 W Broadway, New York, NY 10013",
     "food_type": "French Wine Bar",
-    "latitude": 40.721744799999996,
-    "longitude": -74.0039985887261
+    "id": 46,
+    "latitude": "40.7217447999999961893990985117852687835693359375",
+    "longitude": "-74.0039985887261053676411393098533153533935546875"
   },
   {
     "restaurant_name": "Superiority Burger",
@@ -676,8 +722,9 @@
     },
     "address": "125 E 10th St, New York, NY 10003",
     "food_type": "Vegan",
-    "latitude": 40.73034775,
-    "longitude": -73.98772321509833
+    "id": 47,
+    "latitude": "40.73034774999999996225596987642347812652587890625",
+    "longitude": "-73.987723215098327500527375377714633941650390625"
   },
   {
     "restaurant_name": "The Blind Pig",
@@ -690,8 +737,9 @@
     },
     "address": "230 E 4th St, New York, NY 10009",
     "food_type": "Cocktail Bar",
-    "latitude": 40.723376349999995,
-    "longitude": -73.9832904992956
+    "id": 48,
+    "latitude": "40.723376349999995227335602976381778717041015625",
+    "longitude": "-73.98329049929560596865485422313213348388671875"
   },
   {
     "restaurant_name": "La Esquina",
@@ -704,8 +752,9 @@
     },
     "address": "114 1st Ave, New York, NY 10003",
     "food_type": "Mexican",
-    "latitude": 40.72673545,
-    "longitude": -73.9855830191747
+    "id": 49,
+    "latitude": "40.72673544999999961646608426235616207122802734375",
+    "longitude": "-73.985583019174697483322233892977237701416015625"
   },
   {
     "restaurant_name": "Clover Club",
@@ -718,8 +767,9 @@
     },
     "address": "575 Hudson St, New York, NY 10014",
     "food_type": "Cocktail Bar",
-    "latitude": 40.73611820000001,
-    "longitude": -74.00620170206449
+    "id": 50,
+    "latitude": "40.7361182000000070502210292033851146697998046875",
+    "longitude": "-74.006201702064487335519515909254550933837890625"
   },
   {
     "restaurant_name": "Banh Mi Ngon",
@@ -732,8 +782,9 @@
     },
     "address": "78 1st Ave, New York, NY 10003",
     "food_type": "Vietnamese",
-    "latitude": 40.725055,
-    "longitude": -73.987037
+    "id": 51,
+    "latitude": "40.7250549999999975625541992485523223876953125",
+    "longitude": "-73.9870370000000008303686627186834812164306640625"
   },
   {
     "restaurant_name": "Trafi",
@@ -747,7 +798,8 @@
     },
     "address": "19 E 2nd St, New York, NY 10003",
     "food_type": "Mexican",
-    "latitude": 40.725312,
-    "longitude": -73.991492
+    "id": 52,
+    "latitude": "40.725312000000002399247023276984691619873046875",
+    "longitude": "-73.9914919999999938227119855582714080810546875"
   }
 ]
