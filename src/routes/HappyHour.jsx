@@ -1,33 +1,35 @@
 import React, { useState,useEffect } from "react";
-import seedData from '../seedData.json'
 import HappyHours from './HappyHours'
-
 
 const HappyHour = ({setLat,setLng,setZoom}) =>{
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        const fetchData = async () => {
+      const fetchData = async () => {
           try {
-            const dynamoDb = new AWS.DynamoDB.DocumentClient();
+              const apiGatewayEndpoint = 'https://1mtcc5ovz0.execute-api.us-east-1.amazonaws.com/Test-1';
 
-            const params = {
-              TableName: 'Restaurants',
-            };
-            
-            const result = await dynamoDb.scan(params).promise();
-    
-            setData(result.Items);
-          } catch (error) {
-            console.error("Error fetching data from DynamoDB:", error);
+              const response = await fetch(`${apiGatewayEndpoint}/restaurants`);
+              
+              if (response.ok) {
+                  const result = await response.json();
+                  console.log(result)
+                  setData(result);
+              } 
+              else {
+                  console.error(`Error fetching data from API Gateway. Status: ${response.status}`);
+              }
+          } 
+          catch (error) {
+              console.error("Error fetching data from API Gateway:", error);
           }
-        };
+      };
     
         fetchData();   
     }, []);
 
     if (!data) {
-    return <p>Loading...</p>;
+      return <p>Loading...</p>;
     }
     
     return (
