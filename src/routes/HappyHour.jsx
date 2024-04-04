@@ -28,6 +28,7 @@ const HappyHour = ({setLat,setLng,setZoom}) =>{
         fetchData();   
     }, []);
 
+    
     if (!data) {
       return <p>Loading...</p>;
     }
